@@ -6,7 +6,12 @@ import { useState, useEffect } from "react";
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ["/images/fire.png", "/images/security.png", "/images/gas.png"];
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
+  const images = ["/images/fire.png", "/images/camera.jpg", "/images/gas.png"];
+  
+  const heroText = "RQUIN Integrated Solutions Inc.";
+  const heroSubtitle = "Leading the way in Safety, Construction & Technology.";
   
   // Temporary test with SVG files to debug
   // const images = ["/next.svg", "/vercel.svg", "/file.svg"];
@@ -24,6 +29,27 @@ export default function Hero() {
     });
   }, []);
 
+  // Typing animation effect
+  useEffect(() => {
+    if (isTypingComplete) {
+      // Wait 5 seconds after typing is complete
+      const timer = setTimeout(() => {
+        setIsTypingComplete(false);
+        setCurrentTextIndex(0);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+
+    if (currentTextIndex < heroText.length) {
+      const timer = setTimeout(() => {
+        setCurrentTextIndex(prev => prev + 1);
+      }, 100); // Speed of typing
+      return () => clearTimeout(timer);
+    } else {
+      setIsTypingComplete(true);
+    }
+  }, [currentTextIndex, isTypingComplete, heroText.length]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -33,7 +59,7 @@ export default function Hero() {
   }, [images.length]);
 
   return (
-    <section className="relative min-h-screen h-full flex items-center overflow-hidden">
+    <section className="relative min-h-[50vh] h-full flex items-center overflow-hidden">
              {/* Background Images with Loop */}
        {images.map((image, index) => (
          <div
@@ -51,35 +77,32 @@ export default function Hero() {
              priority={index === 0}
              onError={(e) => console.error(`Error loading image: ${image}`)}
            />
+           {/* Black overlay */}
+           <div className="absolute inset-0 bg-black opacity-30"></div>
          </div>
        ))}
        
        
 
              {/* Content */}
-       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
 
-        <div className="max-w-2xl">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          Fire, Gas, and Security{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-green-300">
-            Solutions Under One Roof
-            </span>
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] drop-shadow-[0_0_20px_rgba(0,0,0,0.6)] drop-shadow-[0_0_30px_rgba(0,0,0,0.4)] [text-shadow:_2px_2px_0_#000,_4px_4px_0_#000,_6px_6px_0_#000] font-['HKModularRounded-Bold']">
+            {heroText.slice(0, currentTextIndex)}
+            <span className="animate-pulse">|</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white mb-8 opacity-90">
-            The community, workspaces, and technology to make a good impression and get down to business.
-          </p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-6 drop-shadow-[0_0_8px_rgba(0,0,0,0.8)] drop-shadow-[0_0_16px_rgba(0,0,0,0.6)] [text-shadow:_1px_1px_0_#000,_2px_2px_0_#000] font-['HKModularRounded-Bold']">
+            {heroSubtitle}
+          </h2>
           
-          <Link 
-            href="/contact" 
-            className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            Book a Visit
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
+          <p className="text-xl md:text-2xl text-white mb-8 opacity-90 font-['HKModularRounded-Bold']">
+          We specialize in delivering integrated solutions – from fire protection and electrical systems to security, civil works and engineering services. With a focus on reliability, innovation, and compliance, we help protect people, property and communities through tailored systems designed to mee the unique needs of every project.
+          </p>
+         
+           
+          
         </div>
       </div>
 

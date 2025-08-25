@@ -1,132 +1,64 @@
 export default function Map() {
   return (
-    <section id="map" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="map" className="py-16 relative overflow-hidden min-h-screen">
+      {/* Wavy Background Pattern */}
+      <div className="absolute inset-0 z-0">
+        {/* Top Half - Teal Background (#31c2c3) */}
+        <div className="absolute top-0 left-0 right-0 h-1/2 bg-[#31c2c3]">
+          {/* Decorative circles for texture */}
+          <div className="absolute top-20 left-20 w-16 h-16 bg-[#0a408b] opacity-20 rounded-full"></div>
+          <div className="absolute top-32 right-32 w-12 h-12 bg-[#0a408b] opacity-15 rounded-full"></div>
+          <div className="absolute top-40 left-1/3 w-8 h-8 bg-[#0a408b] opacity-25 rounded-full"></div>
+          <div className="absolute top-16 right-1/4 w-20 h-20 bg-[#0a408b] opacity-10 rounded-full"></div>
+          
+          {/* Wavy bottom edge to separate from bottom half */}
+          <svg className="absolute bottom-0 left-0 right-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#0a408b" opacity="0.4"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#0a408b" opacity="0.3"></path>
+          </svg>
+        </div>
+        
+        {/* Bottom Half - Dark Blue Background (#0a408b) */}
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#0a408b]">
+          {/* Wavy top edge to separate from top half */}
+          <svg className="absolute top-0 left-0 right-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#31c2c3" opacity="0.3"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#31c2c3" opacity="0.2"></path>
+          </svg>
+          
+          {/* Decorative elements for bottom section */}
+          <div className="absolute bottom-20 right-20 w-20 h-20 bg-[#31c2c3] opacity-30 rounded-full"></div>
+          <div className="absolute bottom-32 left-1/4 w-16 h-16 bg-[#31c2c3] opacity-20 rounded-full"></div>
+          <div className="absolute bottom-40 right-1/3 w-12 h-12 bg-[#31c2c3] opacity-25 rounded-full"></div>
+        </div>
+        
+        {/* Additional floating wavy elements for more dynamic feel */}
+        <div className="absolute top-1/4 left-0 w-32 h-32 bg-[#31c2c3] opacity-10 rounded-full transform -translate-x-16"></div>
+        <div className="absolute top-1/3 right-0 w-24 h-24 bg-[#0a408b] opacity-15 rounded-full transform translate-x-12"></div>
+        <div className="absolute bottom-1/3 left-0 w-28 h-28 bg-[#31c2c3] opacity-8 rounded-full transform -translate-x-14"></div>
+        <div className="absolute bottom-1/4 right-0 w-20 h-20 bg-[#0a408b] opacity-12 rounded-full transform translate-x-10"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Global Presence</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Our Global Presence</h2>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
             Serving clients worldwide with our business solutions and consulting services.
           </p>
         </div>
 
-        {/* Map Placeholder */}
-        <div className="bg-gray-100 rounded-2xl p-8 mb-12">
-          <div className="text-center">
-            <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Interactive Map Coming Soon</h3>
-            <p className="text-gray-600 mb-6">
-              We're working on an interactive map to show our global reach and office locations.
-            </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
-              View Office Locations
-            </button>
-          </div>
-        </div>
-
-        {/* Office Locations */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900">New York</h4>
-                <p className="text-sm text-gray-500">Headquarters</p>
-              </div>
-            </div>
-            <p className="text-gray-600 text-sm mb-4">
-              123 Business Street, Suite 100<br />
-              New York, NY 10001
-            </p>
-            <div className="flex items-center text-sm text-gray-500">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              +1 (555) 123-4567
-            </div>
-          </div>
-
-          <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900">London</h4>
-                <p className="text-sm text-gray-500">European Office</p>
-              </div>
-            </div>
-            <p className="text-gray-600 text-sm mb-4">
-              456 Business Avenue<br />
-              London, UK SW1A 1AA
-            </p>
-            <div className="flex items-center text-sm text-gray-500">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              +44 20 1234 5678
-            </div>
-          </div>
-
-          <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900">Singapore</h4>
-                <p className="text-sm text-gray-500">Asia Pacific Office</p>
-              </div>
-            </div>
-            <p className="text-gray-600 text-sm mb-4">
-              789 Business Road<br />
-              Singapore 018956
-            </p>
-            <div className="flex items-center text-sm text-gray-500">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              +65 6123 4567
-            </div>
-          </div>
-        </div>
-
-        {/* Global Stats */}
-                 <div className="mt-16 bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 text-white">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold mb-2">15+</div>
-              <div className="text-blue-100">Countries</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">25+</div>
-              <div className="text-blue-100">Cities</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">500+</div>
-              <div className="text-blue-100">Clients Served</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">24/7</div>
-              <div className="text-blue-100">Global Support</div>
-            </div>
-          </div>
-        </div>
+        {/* Map Section */}
+        <section className="relative w-full h-150 mb-12">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.9782638325523!2d121.02448117587255!3d14.428416231267574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d1d1e4d6bcbf%3A0xadb61ea35f880f4f!2sMSA%20Academic%20Advancement%20Institute%20-%20Alabang!5e0!3m2!1sen!2sph!4v1756111128407!5m2!1sen!2sph" 
+            className="w-full h-full border-0 rounded-2xl shadow-2xl"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
       </div>
     </section>
   );

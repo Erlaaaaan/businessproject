@@ -25,72 +25,72 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${
+    <header className={`sticky top-0 z-50 transition-all duration-300 w-full ${
       isScrolled ? 'bg-gradient-to-r from-blue-400 to-green-400 bg-opacity-60 backdrop-blur-xl shadow-lg' : 'bg-gradient-to-r from-blue-400 to-green-400 bg-opacity-80 backdrop-blur-xl shadow-lg'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-                     {/* Logo */}
-           <div className="flex-shrink-0">
-                           <Image
-                src="/images/logo.png"
-                alt="FireStone Logo"
-                width={200}
-                height={80}
-                className="h-40 w-auto object-contain"
-                priority
-                quality={100}
-              />
-           </div>
-
-          {/* Desktop Navigation */}
+          {/* Left Navigation - Hidden on Mobile */}
           <nav className="hidden md:flex items-center space-x-6">
-                         <Link 
-               href="/projects" 
-               className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
-             >
-               Projects
-             </Link>
+            <Link 
+              href="/Project" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
+            >
+              Projects
+            </Link>
             
-                         <Link 
-               href="/about" 
-               className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
-             >
-               About
-             </Link>
-                         <Link 
-               href="/blog" 
-               className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
-             >
-               Blog
-             </Link>
-                         <Link 
-               href="/people" 
-               className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
-             >
-               People
-             </Link>
+            <Link 
+              href="/Services" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
+            >
+              Services
+            </Link>
             
-                         <Link 
-               href="/contact" 
-               className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide"
-             >
-               Contact
-             </Link>
-                         <button className="text-black hover:text-blue-600 p-2 transition-colors duration-200">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
+            <Link 
+              href="/about" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
+            >
+              About
+            </Link>
           </nav>
 
-          {/* Mobile menu button */}
+          {/* Logo - Centered */}
+          <div className="flex-shrink-0 absolute left-1/2 transform -translate-x-1/2">
+            <Image
+              src="/images/logo.png"
+              alt="FireStone Logo"
+              width={200}
+              height={80}
+              className="h-32 w-auto object-contain md:h-16 lg:h-50"
+              priority
+              quality={100}
+            />
+          </div>
+
+          {/* Right Navigation - Hidden on Mobile */}
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link 
+              href="/" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
+            >
+              Home
+            </Link>
+            
+            <Link 
+              href="/people" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
+            >
+              People
+            </Link>
+          </nav>
+
+          {/* Mobile menu button - Right Side */}
           <div className="md:hidden">
-                         <button
-               onClick={toggleMenu}
-               className="text-black hover:text-blue-600 focus:text-blue-600 transition-colors duration-300 focus:outline-none"
-               aria-label="Toggle menu"
-             >
+            <button
+              onClick={toggleMenu}
+              className="text-black hover:text-blue-600 focus:text-blue-600 transition-colors duration-300 focus:outline-none p-2"
+              aria-label="Toggle menu"
+            >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -102,47 +102,72 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Overlay */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-transparent border-t border-white border-opacity-20">
-                             <Link 
-                 href="/projects" 
-                 className="text-black hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors duration-200 uppercase"
-                 onClick={() => setIsMenuOpen(false)}
-               >
-                 Projects
-               </Link>
-              
-                             <Link 
-                 href="/about" 
-                 className="text-black hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors duration-200 uppercase"
-                 onClick={() => setIsMenuOpen(false)}
-               >
-                 About
-               </Link>
-                             <Link 
-                 href="/blog" 
-                 className="text-black hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors duration-200 uppercase"
-                 onClick={() => setIsMenuOpen(false)}
-               >
-                 Blog
-               </Link>
-                             <Link 
-                 href="/people" 
-                 className="text-black hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors duration-200 uppercase"
-                 onClick={() => setIsMenuOpen(false)}
-               >
-                 People
-               </Link>
-              
-                             <Link 
-                 href="/contact" 
-                 className="text-black hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors duration-200 uppercase"
-                 onClick={() => setIsMenuOpen(false)}
-               >
-                 Contact
-               </Link>
+          <div className="md:hidden fixed inset-0 z-[9999] bg-gradient-to-br from-blue-50 to-green-50 border-4 border-blue-200">
+            {/* Mobile Menu Header */}
+            <div className="flex items-center justify-between p-6 border-b-2 border-blue-300 bg-gradient-to-r from-blue-100 to-green-100">
+              <div className="flex items-center">
+                <Image
+                  src="/images/logo.png"
+                  alt="RQUIN Logo"
+                  width={120}
+                  height={48}
+                  className="h-32 w-auto object-contain"
+                />
+              </div>
+              <button
+                onClick={toggleMenu}
+                className="text-blue-700 hover:text-green-600 p-2 text-2xl font-bold bg-white rounded-full shadow-md"
+                aria-label="Close menu"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Mobile Menu Navigation Links */}
+            <div className="px-6 py-8 bg-gradient-to-b from-blue-50 to-green-50">
+              <div className="space-y-4">
+                <Link 
+                  href="/" 
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Home
+                </Link>
+                
+                <Link 
+                  href="/Project" 
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Projects
+                </Link>
+                
+                <Link 
+                  href="/Services" 
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Services
+                </Link>
+                
+                <Link 
+                  href="/about" 
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  About
+                </Link>
+                
+                <Link 
+                  href="/people" 
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  People
+                </Link>
+              </div>
             </div>
           </div>
         )}
