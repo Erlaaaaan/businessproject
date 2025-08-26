@@ -19,8 +19,11 @@ const customFont = Orbitron({
 });
 
 export const metadata = {
-  title: "RQUIN Integrated Solutions INC.",
-  description: "RQUIN",
+  title: "RQUIN",
+  description: "RQUIN Integrated Solutions INC.",
+  icons: {
+    icon: '/sample.ico',
+  },
 };
 
 export default function RootLayout({ children }) {

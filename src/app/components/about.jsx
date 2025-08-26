@@ -128,9 +128,9 @@ export default function About() {
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-10'
           }`}>
-            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
-              We are a leading provider of integrated fire protection, gas systems, and security solutions in the Philippines.
-            </p>
+          <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+            We are a leading provider of integrated fire protection, gas systems, and security solutions in the Philippines.
+          </p>
           </div>
         </div>
 

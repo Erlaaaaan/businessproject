@@ -373,7 +373,7 @@ export default function Services() {
 
                      {/* Filter Section with Enhanced Geometric Design */}
             <section className="py-16 bg-gradient-to-br from-white/95 via-blue-50/30 to-white/95 backdrop-blur-md border-b border-blue-200/50 relative z-20">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Enhanced Geometric Decorative Elements */}
                 <div className="flex justify-center mb-12">
                   <div className="relative">
@@ -385,8 +385,15 @@ export default function Services() {
                 </div>
                 
                 {/* Enhanced Title Section */}
-                
-                
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in-up">
+                    Explore Our Services
+                  </h2>
+                  <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-slide-in-down">
+                    Choose a service category to explore our specialized solutions
+          </p>
+        </div>
+
                 {/* Enhanced Filter Buttons */}
                 <div className="flex flex-wrap justify-center gap-6">
                   {serviceCategories.map((category, index) => (
@@ -410,8 +417,8 @@ export default function Services() {
                         <div className="absolute top-2 right-2 w-3 h-3 border border-current opacity-30 rounded-full"></div>
                         <div className="absolute bottom-2 left-2 w-3 h-3 border border-current opacity-30 rotate-90"></div>
                         <div className="absolute bottom-2 right-2 w-3 h-3 border border-current opacity-30 rotate-45"></div>
-                      </div>
-                      
+              </div>
+              
                       {/* Button Content */}
                       <span className="relative z-10 flex items-center">
                         {category.name}
@@ -1142,9 +1149,9 @@ export default function Services() {
                                       Click to learn more
                                     </p>
                                   </div>
-                                </div>
-                              ))}
-                            </div>
+            </div>
+          ))}
+        </div>
 
                             {/* Pagination Controls */}
                             {totalPages > 1 && (
@@ -1174,7 +1181,7 @@ export default function Services() {
                                       </button>
                                     );
                                   })}
-                                </div>
+          </div>
 
                                 <button
                                   onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
@@ -1183,9 +1190,9 @@ export default function Services() {
                                 >
                                   Next
                                 </button>
-                              </div>
-                            )}
-
+                  </div>
+                )}
+                
                             {/* Page Info */}
                             {totalPages > 1 && (
                               <div className="text-center mt-4 text-white">
@@ -1236,7 +1243,7 @@ export default function Services() {
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-white/30">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
+                      </svg>
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2 drop-shadow-md">Expert Team</h3>
                   <p className="text-white/90 drop-shadow-sm">Certified professionals with years of industry experience.</p>
@@ -1337,9 +1344,9 @@ export default function Services() {
                     <span className="text-sm">Safety Compliance</span>
                   </div>
                 </div>
-              </div>
-            </div>
-            
+          </div>
+        </div>
+
             {/* Modal Footer */}
             <div className="px-6 py-4 bg-gray-50/80 backdrop-blur-sm rounded-b-xl border-t border-gray-200/50">
               <button

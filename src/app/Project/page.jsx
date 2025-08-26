@@ -346,9 +346,9 @@ export default function Projects() {
                 <span className="relative z-10">Our Projects</span>
                 {/* Text Shadow Effect */}
                 <div className="absolute inset-0 text-5xl md:text-6xl font-bold text-black/20 blur-sm -translate-x-1 -translate-y-1">
-                  Our Projects
+              Our Projects
                 </div>
-              </h1>
+            </h1>
               
               {/* Decorative Underline */}
               <div className="w-48 h-1 bg-gradient-to-r from-blue-300 via-white to-blue-300 rounded-full mx-auto animate-expand-width"></div>
@@ -358,8 +358,8 @@ export default function Projects() {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
                 <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-95 animate-slide-in-down leading-relaxed">
-                  Discover our portfolio of successful fire protection, gas systems, and security solutions across the Philippines
-                </p>
+              Discover our portfolio of successful fire protection, gas systems, and security solutions across the Philippines
+            </p>
                 
                 {/* Bottom Decorative Elements */}
                 <div className="flex justify-center mt-6 space-x-4">
@@ -420,7 +420,7 @@ export default function Projects() {
                   
                   {/* Button Content */}
                   <span className="relative z-10 flex items-center">
-                    {category.name}
+                  {category.name}
                     {/* Enhanced Icon */}
                     <svg className={`ml-3 w-5 h-5 transition-all duration-300 ${
                       activeCategory === category.id 
@@ -458,7 +458,7 @@ export default function Projects() {
                 <div className="text-center">
                   <div className="relative">
                     {/* Geometric Loading Animation */}
-                    <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                  <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                     <div className="absolute inset-0 w-16 h-16 border-4 border-green-400 border-b-transparent rounded-full animate-spin-reverse mx-auto"></div>
                     <div className="absolute inset-2 w-12 h-12 border-4 border-purple-400 border-l-transparent rounded-full animate-spin mx-auto"></div>
                   </div>
