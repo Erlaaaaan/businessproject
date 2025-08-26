@@ -119,16 +119,19 @@ export default function About() {
             ? 'opacity-100 translate-y-0 scale-100' 
             : 'opacity-0 translate-y-20 scale-95'
         }`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg transition-all duration-300 group-hover:text-blue-200">
-            {aboutTitle.slice(0, currentTextIndex)}
-            <span className="animate-pulse">|</span>
-          </h2>
+          {/* Fixed height container to prevent auto-scroll */}
+          <div className="h-32 sm:h-40 md:h-48 lg:h-56 flex items-center justify-center mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white drop-shadow-lg transition-all duration-300 group-hover:text-blue-200 break-words">
+              {aboutTitle.slice(0, currentTextIndex)}
+              <span className="animate-pulse">|</span>
+            </h2>
+          </div>
           <div className={`transition-all duration-1000 delay-500 ${
             visibleElements.description 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-10'
           }`}>
-          <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+          <p className="text-lg sm:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md break-words px-2">
             We are a leading provider of integrated fire protection, gas systems, and security solutions in the Philippines.
           </p>
           </div>

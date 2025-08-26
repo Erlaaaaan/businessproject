@@ -104,17 +104,20 @@ export default function Hero() {
         }}
       >
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] drop-shadow-[0_0_20px_rgba(0,0,0,0.6)] drop-shadow-[0_0_30px_rgba(0,0,0,0.4)] [text-shadow:_2px_2px_0_#000,_4px_4px_0_#000,_6px_6px_0_#000] font-['HKModularRounded-Bold'] transition-all duration-700 hover:scale-105">
-            {heroText.slice(0, currentTextIndex)}
-            <span className="animate-pulse">|</span>
-          </h1>
+          {/* Fixed height container to prevent auto-scroll */}
+          <div className="h-32 sm:h-40 md:h-48 lg:h-56 flex items-center justify-center mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] drop-shadow-[0_0_20px_rgba(0,0,0,0.6)] drop-shadow-[0_0_30px_rgba(0,0,0,0.4)] [text-shadow:_2px_2px_0_#000,_4px_4px_0_#000,_6px_6px_0_#000] font-['HKModularRounded-Bold'] transition-all duration-700 hover:scale-105 break-words">
+              {heroText.slice(0, currentTextIndex)}
+              <span className="animate-pulse">|</span>
+            </h1>
+          </div>
           
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-6 drop-shadow-[0_0_8px_rgba(0,0,0,0.8)] drop-shadow-[0_0_16px_rgba(0,0,0,0.6)] [text-shadow:_1px_1px_0_#000,_2px_2px_0_#000] font-['HKModularRounded-Bold'] transition-all duration-700 hover:text-blue-200">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-white mb-4 sm:mb-6 drop-shadow-[0_0_8px_rgba(0,0,0,0.8)] drop-shadow-[0_0_16px_rgba(0,0,0,0.6)] [text-shadow:_1px_1px_0_#000,_2px_2px_0_#000] font-['HKModularRounded-Bold'] transition-all duration-700 hover:text-blue-200 break-words">
             {heroSubtitle}
           </h2>
           
-          <p className="text-xl md:text-2xl text-white mb-8 opacity-90 font-['HKModularRounded-Bold'] transition-all duration-700 hover:opacity-100 hover:text-blue-100">
-            We specialize in delivering integrated solutions – from fire protection and electrical systems to security, civil works and engineering services. With a focus on reliability, innovation, and compliance, we help protect people, property and communities through tailored systems designed to mee the unique needs of every project.
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mb-6 sm:mb-8 opacity-90 font-['HKModularRounded-Bold'] transition-all duration-700 hover:opacity-100 hover:text-blue-100 leading-relaxed break-words px-2">
+            We specialize in delivering integrated solutions – from fire protection and electrical systems to security, civil works and engineering services. With a focus on reliability, innovation, and compliance, we help protect people, property and communities through tailored systems designed to meet the unique needs of every project.
           </p>
         </div>
       </div>
