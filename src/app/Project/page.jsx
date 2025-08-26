@@ -377,31 +377,74 @@ export default function Projects() {
           </div>
         </section>
 
-        {/* Category Filter with Geometric Design */}
-        <section className="py-12 bg-white/90 backdrop-blur-sm border-b relative z-20">
+        {/* Category Filter with Enhanced Geometric Design */}
+        <section className="py-16 bg-gradient-to-br from-white/95 via-blue-50/30 to-white/95 backdrop-blur-md border-b border-blue-200/50 relative z-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Geometric Decorative Elements */}
-            <div className="flex justify-center mb-8">
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-full animate-expand-width"></div>
+            {/* Enhanced Geometric Decorative Elements */}
+            <div className="flex justify-center mb-12">
+              <div className="relative">
+                <div className="w-32 h-1 bg-gradient-to-r from-blue-600 via-green-400 to-blue-600 rounded-full animate-expand-width shadow-lg"></div>
+                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>
+                <div className="absolute -top-1 left-1/4 w-2 h-2 bg-green-400 rounded-full animate-pulse delay-300"></div>
+                <div className="absolute -top-1 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-600"></div>
+              </div>
             </div>
             
-            <div className="flex flex-wrap justify-center gap-4">
+            {/* Enhanced Title Section */}
+            
+            
+            {/* Enhanced Filter Buttons */}
+            <div className="flex flex-wrap justify-center gap-6">
               {projectCategories.map((category, index) => (
                 <button
                   key={category.id}
                   onClick={() => handleCategoryChange(category.id)}
-                  className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+                  className={`group relative px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-500 transform hover:scale-110 active:scale-95 ${
                     activeCategory === category.id
-                      ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30"
-                      : "bg-gray-200 text-gray-700 hover:bg-gradient-to-r hover:from-gray-300 hover:to-gray-400 hover:shadow-md"
+                      ? "bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white shadow-2xl shadow-blue-500/40 border-2 border-blue-400"
+                      : "bg-gradient-to-r from-gray-100 via-white to-gray-100 text-gray-700 hover:from-blue-50 hover:via-white hover:to-blue-50 hover:shadow-xl hover:shadow-blue-200/50 border-2 border-gray-200 hover:border-blue-300"
                   }`}
                   style={{
-                    transitionDelay: `${index * 100}ms`
+                    transitionDelay: `${index * 150}ms`
                   }}
                 >
-                  {category.name}
+                  {/* Enhanced Button Background Pattern */}
+                  <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+                    activeCategory === category.id ? 'bg-gradient-to-r from-blue-400/20 to-blue-600/20' : 'bg-gradient-to-r from-blue-100/30 to-green-100/30'
+                  }`}>
+                    <div className="absolute top-2 left-2 w-3 h-3 border border-current opacity-30 rotate-45"></div>
+                    <div className="absolute top-2 right-2 w-3 h-3 border border-current opacity-30 rounded-full"></div>
+                    <div className="absolute bottom-2 left-2 w-3 h-3 border border-current opacity-30 rotate-90"></div>
+                    <div className="absolute bottom-2 right-2 w-3 h-3 border border-current opacity-30 rotate-45"></div>
+                  </div>
+                  
+                  {/* Button Content */}
+                  <span className="relative z-10 flex items-center">
+                    {category.name}
+                    {/* Enhanced Icon */}
+                    <svg className={`ml-3 w-5 h-5 transition-all duration-300 ${
+                      activeCategory === category.id 
+                        ? 'text-white rotate-12 scale-110' 
+                        : 'text-gray-500 group-hover:text-blue-600 group-hover:rotate-12 group-hover:scale-110'
+                    }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  
+                  {/* Enhanced Hover Effect */}
+                  <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 transform -skew-x-12 translate-x-full group-hover:translate-x-0`}></div>
                 </button>
               ))}
+            </div>
+            
+            {/* Enhanced Bottom Decorative Elements */}
+            <div className="flex justify-center mt-12">
+              <div className="flex space-x-3">
+                <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse delay-200"></div>
+                <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse delay-400"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse delay-600"></div>
+              </div>
             </div>
           </div>
         </section>

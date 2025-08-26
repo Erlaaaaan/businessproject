@@ -59,12 +59,12 @@ export default function Header() {
               Services
             </Link>
             
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] cursor-pointer"
+            <Link 
+              href="/about" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
             >
               About
-            </button>
+            </Link>
           </nav>
 
           {/* Logo - Centered */}
@@ -165,12 +165,12 @@ export default function Header() {
                   Services
                 </Link>
                 
-                <button 
-                  onClick={() => scrollToSection('about')}
+                <Link 
+                  href="/about" 
                   className="text-blue-800 hover:text-green-700 block w-full text-left px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
                 >
                   About
-                </button>
+                </Link>
                 
                 <Link 
                   href="/people" 

@@ -38,11 +38,28 @@ export default function About() {
 
   // Scroll-triggered animations
   useEffect(() => {
+    // Show all elements immediately when component mounts
+    const showAllElements = () => {
+      setVisibleElements({
+        title: true,
+        description: true,
+        whoWeAre: true,
+        numbers: true,
+        services: true
+      });
+    };
+
+    // Show elements immediately and also on scroll
+    showAllElements();
+    
+    // Scroll to top when component mounts
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
       
-      // Trigger animations based on scroll position
+      // Trigger animations based on scroll position (as backup)
       if (scrollY > 200) setVisibleElements(prev => ({ ...prev, title: true }));
       if (scrollY > 300) setVisibleElements(prev => ({ ...prev, description: true }));
       if (scrollY > 400) setVisibleElements(prev => ({ ...prev, whoWeAre: true }));
