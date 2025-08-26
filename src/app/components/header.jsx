@@ -71,7 +71,7 @@ export default function Header() {
           <div className="flex-shrink-0 absolute left-1/2 transform -translate-x-1/2">
             <Image
               src="/images/logo.png"
-              alt="FireStone Logo"
+              alt=""
               width={200}
               height={80}
               className="h-32 w-auto object-contain md:h-16 lg:h-50"
