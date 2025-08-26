@@ -13,7 +13,7 @@ const PartnerCompanies = () => {
     "/images/projects/paseo.png",
     "/images/projects/crown.png",
     "/images/projects/pera.jpg",
-    "/images/projects/perps.jpg",
+    "/images/projects/perpetual.png",
     "/images/projects/Minebia.jpg",
     "/images/projects/Baliwag.png",
     "/images/projects/Evang.jpg",

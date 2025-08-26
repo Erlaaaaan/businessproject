@@ -97,7 +97,7 @@ export default function Projects() {
       title: "Perpetual Help Medical Center",
       category: "luzon",
       description: "Complete fire protection system for Perpetual Help Medical Center",
-      image: "/images/projects/perps.jpg",
+      image: "/images/projects/perpetual.png",
       location: "Las Piñas City",
       year: "2023",
       client: "Perpetual Help Medical Center"
