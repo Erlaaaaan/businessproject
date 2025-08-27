@@ -337,13 +337,13 @@ export default function Projects() {
             
             {/* Main Title with Enhanced Styling */}
             <div className="relative mb-8">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up relative">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up relative font-montserrat">
                 <span className="relative z-10">Our Projects</span>
                 {/* Text Shadow Effect */}
-                <div className="absolute inset-0 text-5xl md:text-6xl font-bold text-black/20 blur-sm -translate-x-1 -translate-y-1">
-              Our Projects
+                <div className="absolute inset-0 text-5xl md:text-6xl font-bold text-black/20 blur-sm -translate-x-1 -translate-y-1 font-montserrat">
+                  Our Projects
                 </div>
-            </h1>
+              </h1>
               
               {/* Decorative Underline */}
               <div className="w-48 h-1 bg-gradient-to-r from-blue-300 via-white to-blue-300 rounded-full mx-auto animate-expand-width"></div>
@@ -352,9 +352,9 @@ export default function Projects() {
             {/* Description with Enhanced Container */}
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
-                <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-95 animate-slide-in-down leading-relaxed">
-              Discover our portfolio of successful fire protection, gas systems, and security solutions across the Philippines
-            </p>
+                <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-95 animate-slide-in-down leading-relaxed font-montserrat">
+                  Discover our portfolio of successful fire protection, gas systems, and security solutions across the Philippines
+                </p>
                 
                 {/* Bottom Decorative Elements */}
                 <div className="flex justify-center mt-6 space-x-4">
@@ -414,8 +414,8 @@ export default function Projects() {
                   </div>
                   
                   {/* Button Content */}
-                  <span className="relative z-10 flex items-center">
-                  {category.name}
+                  <span className="relative z-10 flex items-center font-montserrat">
+                    {category.name}
                     {/* Enhanced Icon */}
                     <svg className={`ml-3 w-5 h-5 transition-all duration-300 ${
                       activeCategory === category.id 
@@ -527,19 +527,19 @@ export default function Projects() {
                     <div className="absolute top-0 left-8 w-16 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
                     
                     {/* Title with Enhanced Typography */}
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300 leading-tight font-montserrat">
                       {project.title}
                     </h3>
                     
                     {/* Description with Better Styling */}
-                    <p className="text-gray-600 mb-6 leading-relaxed text-base">
+                    <p className="text-gray-600 mb-6 leading-relaxed text-base font-montserrat">
                       {project.description}
                     </p>
                     
                     {/* Enhanced View Details Button with Geometric Design */}
                     <div className="mt-auto">
                       <button 
-                        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl active:scale-95 border-0 relative overflow-hidden group"
+                        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl active:scale-95 border-0 relative overflow-hidden group font-montserrat"
                         onClick={() => {
                           setSelectedProject(project);
                           setIsModalOpen(true);
@@ -582,20 +582,20 @@ export default function Projects() {
               <button
                 onClick={goToPreviousPage}
                 disabled={currentPage === 1 || isPageTransitioning}
-                className="px-4 py-2 rounded-lg bg-white/90 backdrop-blur-sm text-gray-700 hover:bg-white transition-all duration-200 hover:scale-105 active:scale-95 border border-gray-200 relative overflow-hidden group"
+                className="px-4 py-2 rounded-lg bg-white/90 backdrop-blur-sm text-gray-700 hover:bg-white transition-all duration-200 hover:scale-105 active:scale-95 border border-gray-200 relative overflow-hidden group font-montserrat"
               >
                 <span className="relative z-10">Previous</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-green-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               
-              <span className="text-gray-700 px-4 bg-white/80 backdrop-blur-sm rounded-lg py-2 border border-gray-200">
+              <span className="text-gray-700 px-4 bg-white/80 backdrop-blur-sm rounded-lg py-2 border border-gray-200 font-montserrat">
                 Page {currentPage} of {totalPages}
               </span>
               
               <button
                 onClick={goToNextPage}
                 disabled={currentPage === totalPages || isPageTransitioning}
-                className="px-4 py-2 rounded-lg bg-white/90 backdrop-blur-sm text-gray-700 hover:bg-white transition-all duration-200 hover:scale-105 active:scale-95 border border-gray-200 relative overflow-hidden group"
+                className="px-4 py-2 rounded-lg bg-white/90 backdrop-blur-sm text-gray-700 hover:bg-white transition-all duration-200 hover:scale-105 active:scale-95 border border-gray-200 relative overflow-hidden group font-montserrat"
               >
                 <span className="relative z-10">Next</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-green-50 to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

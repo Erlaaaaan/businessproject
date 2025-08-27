@@ -59,7 +59,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
         <div className="p-8 pt-16 relative z-10">
           {/* Description Section */}
           <div className="mb-8 bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-blue-100/50 shadow-sm">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center font-montserrat">
               <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-3 shadow-lg">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -67,14 +67,14 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               </div>
               Project Description
             </h3>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-gray-700 text-lg leading-relaxed font-montserrat">
               {project?.description || "Detailed project description will be displayed here."}
             </p>
           </div>
 
           {/* Additional Details Section */}
           <div className="mb-8 bg-gradient-to-r from-blue-50/80 to-indigo-50/80 backdrop-blur-sm rounded-xl p-6 border border-blue-200/50 shadow-sm">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center font-montserrat">
               <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3 shadow-lg">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -86,19 +86,19 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 mr-3 flex-shrink-0 shadow-sm"></div>
-                  <span className="text-gray-700">Comprehensive fire protection system installation</span>
+                  <span className="text-gray-700 font-montserrat">Comprehensive fire protection system installation</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 mr-3 flex-shrink-0 shadow-sm"></div>
-                  <span className="text-gray-700">Advanced security and monitoring solutions</span>
+                  <span className="text-gray-700 font-montserrat">Advanced security and monitoring solutions</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 mr-3 flex-shrink-0 shadow-sm"></div>
-                  <span className="text-gray-700">Professional engineering and compliance standards</span>
+                  <span className="text-gray-700 font-montserrat">Professional engineering and compliance standards</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 mr-3 flex-shrink-0 shadow-sm"></div>
-                  <span className="text-gray-700">24/7 support and maintenance services</span>
+                  <span className="text-gray-700 font-montserrat">24/7 support and maintenance services</span>
                 </li>
               </ul>
             </div>
@@ -115,9 +115,9 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900">Location</h4>
+                <h4 className="text-lg font-semibold text-gray-900 font-montserrat">Location</h4>
               </div>
-              <p className="text-gray-700">{project?.location || "Location information"}</p>
+              <p className="text-gray-700 font-montserrat">{project?.location || "Location information"}</p>
             </div>
 
             {/* Client */}
@@ -128,9 +128,9 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900">Client</h4>
+                <h4 className="text-lg font-semibold text-gray-900 font-montserrat">Client</h4>
               </div>
-              <p className="text-gray-700">{project?.client || "Client information"}</p>
+              <p className="text-gray-700 font-montserrat">{project?.client || "Client information"}</p>
             </div>
 
             {/* Category */}
@@ -141,9 +141,9 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900">Category</h4>
+                <h4 className="text-lg font-semibold text-gray-900 font-montserrat">Category</h4>
               </div>
-              <p className="text-gray-700 capitalize">{project?.category || "Category information"}</p>
+              <p className="text-gray-700 capitalize font-montserrat">{project?.category || "Category information"}</p>
             </div>
 
             {/* Year */}
@@ -154,9 +154,9 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900">Year</h4>
+                <h4 className="text-lg font-semibold text-gray-900 font-montserrat">Year</h4>
               </div>
-              <p className="text-gray-700">{project?.year || "Year information"}</p>
+              <p className="text-gray-700 font-montserrat">{project?.year || "Year information"}</p>
             </div>
           </div>
         </div>

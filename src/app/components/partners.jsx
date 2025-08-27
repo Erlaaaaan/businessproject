@@ -33,7 +33,7 @@ const PartnerCompanies = () => {
   return (
     <div className="text-center bg-white py-6 sm:py-8 md:py-10 px-3 sm:px-4">
       {/* Heading */}
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 relative inline-block after:content-[''] after:block after:w-16 sm:after:w-20 md:after:w-24 lg:after:w-101 after:h-0.5 sm:after:h-1 after:bg-yellow-300 after:mx-auto after:mt-2 mb-6 sm:mb-8 md:mb-10">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 relative inline-block after:content-[''] after:block after:w-16 sm:after:w-20 md:after:w-24 lg:after:w-101 after:h-0.5 sm:after:h-1 after:bg-yellow-300 after:mx-auto after:mt-2 mb-6 sm:mb-8 md:mb-10 font-montserrat">
         Our Trusted Clients
       </h1>
 

@@ -34,7 +34,7 @@ export default function PageTransition({ children }) {
             </div>
             
             {/* Loading Text */}
-            <div className="text-xl animate-pulse drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">Loading</div>
+            <div className="text-xl animate-pulse drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] font-montserrat">Loading</div>
             
             {/* Animated Dots */}
             <div className="flex justify-center mt-4 space-x-2">

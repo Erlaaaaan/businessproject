@@ -324,10 +324,10 @@ export default function Services() {
               
               {/* Main Title with Enhanced Styling */}
               <div className="relative mb-8">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up relative">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up relative font-montserrat">
                   <span className="relative z-10">Our Services</span>
                   {/* Text Shadow Effect */}
-                  <div className="absolute inset-0 text-5xl md:text-6xl font-bold text-black/20 blur-sm -translate-x-1 -translate-y-1">
+                  <div className="absolute inset-0 text-5xl md:text-6xl font-bold text-black/20 blur-sm -translate-x-1 -translate-y-1 font-montserrat">
                     Our Services
                   </div>
                 </h1>
@@ -339,7 +339,7 @@ export default function Services() {
               {/* Description with Enhanced Container */}
               <div className="relative">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
-                  <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-95 animate-slide-in-down leading-relaxed">
+                  <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-95 animate-slide-in-down leading-relaxed font-montserrat">
                     Professional solutions for Fire & Safety, IT & Security Systems, and Civil Works & Engineering.
                   </p>
                   
@@ -374,13 +374,13 @@ export default function Services() {
                 
                 {/* Enhanced Title Section */}
                 <div className="text-center mb-12">
-                  <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in-up">
+                  <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in-up font-montserrat">
                     Explore Our Services
                   </h2>
-                  <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-slide-in-down">
+                  <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-slide-in-down font-montserrat">
                     Choose a service category to explore our specialized solutions
-          </p>
-        </div>
+                  </p>
+                </div>
 
                 {/* Enhanced Filter Buttons */}
                 <div className="flex flex-wrap justify-center gap-6">
@@ -408,7 +408,7 @@ export default function Services() {
               </div>
               
                       {/* Button Content */}
-                      <span className="relative z-10 flex items-center">
+                      <span className="relative z-10 flex items-center font-montserrat">
                         {category.name}
                         {/* Enhanced Icon */}
                         <svg className={`ml-3 w-5 h-5 transition-all duration-300 ${
@@ -443,12 +443,12 @@ export default function Services() {
               <section className="py-20 relative z-20">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                  <div className="text-center mb-12">
-                   <h2 className="text-4xl font-bold text-black mb-4 drop-shadow-lg">Comprehensive Fire and Safety Solutions</h2>
-                   <p className="text-xl text-black/90 font-semibold mb-6 drop-shadow-md">Maintenance, Supply & Installation Across Region and Philippines.</p>
+                   <h2 className="text-4xl font-bold text-black mb-4 drop-shadow-lg font-montserrat">Comprehensive Fire and Safety Solutions</h2>
+                   <p className="text-xl text-black/90 font-semibold mb-6 drop-shadow-md font-montserrat">Maintenance, Supply & Installation Across Region and Philippines.</p>
                  </div>
                  
                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/30">
-                   <p className="text-lg text-black leading-relaxed text-center drop-shadow-sm">
+                   <p className="text-lg text-black leading-relaxed text-center drop-shadow-sm font-montserrat">
                      At RQUIN Integrated Solutions Inc., we provide comprehensive, end-to-end fire safety and protection system solutions designed to safeguard lives and assets. We offer unparalleled expertise in the maintenance, supply, and installation of all types of fire safety equipment and integrated systems for commercial, industrial, and residential properties in The Philippines.
                    </p>
                  </div>
@@ -461,12 +461,12 @@ export default function Services() {
              <section className="py-20 relative z-20">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                  <div className="text-center mb-12">
-                   <h2 className="text-4xl font-bold text-black mb-4 drop-shadow-lg">Advanced IT & Security Services for Smart Protection</h2>
-                   <p className="text-xl text-black/90 font-semibold mb-6 drop-shadow-md">End-to-End Technology for a Safer Environment</p>
+                   <h2 className="text-4xl font-bold text-black mb-4 drop-shadow-lg font-montserrat">Advanced IT & Security Services for Smart Protection</h2>
+                   <p className="text-xl text-black/90 font-semibold mb-6 drop-shadow-md font-montserrat">End-to-End Technology for a Safer Environment</p>
                  </div>
                  
                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/30">
-                   <p className="text-lg text-black leading-relaxed text-center drop-shadow-sm">
+                   <p className="text-lg text-black leading-relaxed text-center drop-shadow-sm font-montserrat">
                      RQUIN is a leading provider of integrated IT and security system solutions serving Abu Dhabi, Dubai, and across the entire United Arab Emirates. We offer a full spectrum of services from initial consultation and system design to professional installation, ongoing maintenance, and reliable supply of cutting-edge equipment. We are committed to empowering businesses throughout the UAE with robust, secure, and efficient technological infrastructures that protect assets, optimize operations, and ensure business continuity.
                    </p>
                  </div>
@@ -502,10 +502,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Protection Systems
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -529,10 +529,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Safety Equipment & Training
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -556,10 +556,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Emergency Response Systems
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -583,10 +583,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Detection & Alarms
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -610,10 +610,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Suppression Systems
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -637,10 +637,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Safety Equipment
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -664,10 +664,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Prevention Solutions
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -691,10 +691,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Emergency Fire Services
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -718,10 +718,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Safety Training
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -745,10 +745,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire System Maintenance
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -772,10 +772,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Safety Inspections
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -799,10 +799,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Equipment Supply
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -826,10 +826,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire System Integration
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -853,10 +853,10 @@ export default function Services() {
                                        />
                                      </div>
                                      <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                       <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                          Fire Safety Consulting
                                        </h3>
-                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                       <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                          Click to learn more
                                        </p>
                                      </div>
@@ -892,10 +892,10 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                  System Supply & Procurement
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -919,10 +919,10 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                  Professional Installation & Integration
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -947,11 +947,11 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                  Proactive Maintenance & Support
 
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -975,10 +975,10 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                    Support Services
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -1011,10 +1011,10 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                    Earth and Masonry Works
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -1038,10 +1038,10 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                    Material Supply and Fabrication.
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -1065,10 +1065,10 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                    Comprehensive Contracting.
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -1092,10 +1092,10 @@ export default function Services() {
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                    Support Services
                                  </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                    Click to learn more
                                  </p>
                                </div>
@@ -1132,10 +1132,10 @@ export default function Services() {
                                     />
                                   </div>
                                   <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                    <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                    <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide font-montserrat">
                                       {service.title}
                                     </h3>
-                                    <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                    <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md font-montserrat">
                                       Click to learn more
                                     </p>
                                   </div>
@@ -1149,7 +1149,7 @@ export default function Services() {
                                 <button
                                   onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                                   disabled={currentPage === 1}
-                                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors duration-200"
+                                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors duration-200 font-montserrat"
                                 >
                                   Previous
                                 </button>
@@ -1161,7 +1161,7 @@ export default function Services() {
                                       <button
                                         key={pageNumber}
                                         onClick={() => setCurrentPage(pageNumber)}
-                                        className={`px-3 py-2 rounded-lg transition-colors duration-200 ${
+                                        className={`px-3 py-2 rounded-lg transition-colors duration-200 font-montserrat ${
                                           currentPage === pageNumber
                                             ? "bg-blue-600 text-white"
                                             : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -1171,12 +1171,12 @@ export default function Services() {
                                       </button>
                                     );
                                   })}
-          </div>
+                                </div>
 
                                 <button
                                   onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
                                   disabled={currentPage === totalPages}
-                                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors duration-200"
+                                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors duration-200 font-montserrat"
                                 >
                                   Next
                                 </button>
@@ -1186,7 +1186,7 @@ export default function Services() {
                             {/* Page Info */}
                             {totalPages > 1 && (
                               <div className="text-center mt-4 text-white">
-                                <p className="text-sm">
+                                <p className="text-sm font-montserrat">
                                   Page {currentPage} of {totalPages} • Showing {startIndex + 1}-{Math.min(endIndex, services.length)} of {services.length} services
                                 </p>
                               </div>
@@ -1203,8 +1203,8 @@ export default function Services() {
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-full animate-expand-width"></div>
               </div>
               
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Our Services?</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6 font-montserrat">Why Choose Our Services?</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12 font-montserrat">
                 We combine expertise in fire safety, technology, and engineering to deliver comprehensive solutions for all your needs.
               </p>
               
@@ -1235,8 +1235,8 @@ export default function Services() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Safety First</h3>
-                  <p className="text-gray-600">Your safety and security are our top priorities in every project.</p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2 font-montserrat">Safety First</h3>
+                  <p className="text-gray-600 font-montserrat">Your safety and security are our top priorities in every project.</p>
                 </div>
                 
                 <div className="text-center group">
@@ -1245,18 +1245,18 @@ export default function Services() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Innovation</h3>
-                  <p className="text-gray-600">Cutting-edge technology and modern engineering solutions.</p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2 font-montserrat">Innovation</h3>
+                  <p className="text-gray-600 font-montserrat">Cutting-edge technology and modern engineering solutions.</p>
                 </div>
                 
                 <div className="text-center group">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-blue-200">
                     <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+                    </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Expert Team</h3>
-                  <p className="text-gray-600">Certified professionals with years of industry experience.</p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2 font-montserrat">Expert Team</h3>
+                  <p className="text-gray-600 font-montserrat">Certified professionals with years of industry experience.</p>
                 </div>
               </div>
             </div>
