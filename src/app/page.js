@@ -6,7 +6,6 @@ import About from "./components/about";
 import Partners from "./components/partners";
 import Map from "./components/map";
 import Footer from "./components/footer";
-import Services from "./Services/page";
 // import Blogs from "./Blog/blogs";
 
 export default function Home() {

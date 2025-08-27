@@ -1079,7 +1079,7 @@ export default function Services() {
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
                                  title: "Support Services",
-                                 description: "All incidental works and related services necessary for the completion of projects.",
+                                 description: "all incidental works and related services necessary for the completion of projects.",
                                  image: "/images/IT/IT7.png",
                                  details: "Our cloud security solutions protect your data and applications in cloud environments. We implement comprehensive security measures including encryption, access control, threat detection, and compliance monitoring."
                                })}

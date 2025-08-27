@@ -26,7 +26,7 @@ export default function Map() {
 
   return (
     <section id="map" className="pt-20 sm:pt-30 md:pt-40 lg:pt-50 pb-0 relative overflow-hidden min-h-screen bg-white">
-      {/* Clean Background with Simple Accents */}image.png
+      {/* Clean Background with Simple Accents */}
       <div className="absolute inset-0 z-0">
         {/* Simple blue accent line at top */}
         <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-green-500"></div>
