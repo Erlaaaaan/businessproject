@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Map() {
   const [visibleElements, setVisibleElements] = useState({
@@ -25,7 +26,7 @@ export default function Map() {
 
   return (
     <section id="map" className="pt-20 sm:pt-30 md:pt-40 lg:pt-50 pb-0 relative overflow-hidden min-h-screen bg-white">
-      {/* Clean Background with Simple Accents */}
+      {/* Clean Background with Simple Accents */}image.png
       <div className="absolute inset-0 z-0">
         {/* Simple blue accent line at top */}
         <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-green-500"></div>
@@ -92,6 +93,28 @@ export default function Map() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
+
+        {/* Safety Solutions Section */}
+        <div className="mt-8 sm:mt-12 md:mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl overflow-hidden border border-gray-200">
+          <div className="px-4 sm:px-6 py-8 sm:py-12 md:py-16 text-center">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4 font-montserrat px-2">
+              Want to be part of our RQUIN Company?
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 max-w-xs sm:max-w-md md:max-w-2xl mx-auto px-2">
+              We deliver certified services tailored to your facility's needs.
+            </p>
+            <div className="flex justify-center">
+              <Link href="/qoute">
+                <button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white rounded-full flex items-center justify-center">
+                    <span className="text-blue-600 font-bold text-sm sm:text-lg">R</span>
+                  </div>
+                  <span>Get A Quote</span>
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

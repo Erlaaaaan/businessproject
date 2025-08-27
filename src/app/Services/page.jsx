@@ -998,7 +998,7 @@ export default function Services() {
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
                                  title: "Earth and Masonry Works",
-                                 description: "Integrated smart home automation and security systems for modern living.",
+                                 description: "Iron, wood, concrete, masonry, and earth constructions.",
                                  image: "/images/IT/IT4.png",
                                  details: "Our smart home systems integrate automation, security, and entertainment into one seamless platform. We provide complete smart home solutions that enhance comfort, security, and energy efficiency."
                                })}
@@ -1025,7 +1025,7 @@ export default function Services() {
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
                                  title: "Material Supply and Fabrication.",
-                                 description: "Comprehensive security solutions for data centers and server facilities.",
+                                 description: "Manufacturing and furnishing of building materials and supplies.",
                                  image: "/images/IT/IT5.png",
                                  details: "Our data center security solutions provide comprehensive protection for critical infrastructure. We implement multi-layered security including physical access control, environmental monitoring, and advanced threat detection systems."
                                })}
@@ -1052,7 +1052,7 @@ export default function Services() {
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
                                  title: "Comprehensive Contracting.",
-                                 description: "Advanced video analytics and AI-powered surveillance intelligence.",
+                                 description: "Bidding, executing, and receiving contracts or assignments related to construction and allied activities.",
                                  image: "/images/IT/IT6.png",
                                  details: "Our advanced video analytics systems use artificial intelligence to provide intelligent surveillance capabilities. We offer facial recognition, object detection, behavior analysis, and automated alerting systems."
                                })}
@@ -1079,7 +1079,7 @@ export default function Services() {
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
                                  title: "Support Services",
-                                 description: "Secure cloud infrastructure and data protection solutions.",
+                                 description: "All incidental works and related services necessary for the completion of projects.",
                                  image: "/images/IT/IT7.png",
                                  details: "Our cloud security solutions protect your data and applications in cloud environments. We implement comprehensive security measures including encryption, access control, threat detection, and compliance monitoring."
                                })}

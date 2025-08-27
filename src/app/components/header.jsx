@@ -45,19 +45,29 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo - Left Side */}
           <div className="flex-shrink-0">
-            <Image
-              src="/images/logo.png"
-              alt="RQUIN Logo"
-              width={200}
-              height={80}
-              className="h-32 w-auto object-contain md:h-16 lg:h-50"
-              priority
-              quality={100}
-            />
+            <Link href="/">
+              <Image
+                src="/images/logo.png"
+                alt="RQUIN Logo"
+                width={200}
+                height={80}
+                className="h-32 w-auto object-contain md:h-16 lg:h-50 cursor-pointer hover:opacity-80 transition-opacity duration-200"
+                priority
+                quality={100}
+              />
+            </Link>
           </div>
 
           {/* Center Navigation - Hidden on Mobile */}
           <nav className="hidden md:flex items-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
+          <Link 
+              href="/" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
+            >
+              Home
+            </Link>
+            
+            
             <Link 
               href="/Project" 
               className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
@@ -65,12 +75,7 @@ export default function Header() {
               Projects
             </Link>
             
-            <Link 
-              href="/" 
-              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
-            >
-              Home
-            </Link>
+        
             
             <Link 
               href="/Services" 
