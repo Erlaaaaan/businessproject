@@ -54,7 +54,7 @@ export default function Services() {
     {
       id: 2,
       title: "Emergency Evacuation Plan",
-      description: "We provide complete Emergency Evacuation Plan services in the UAE, including expert design, equipment supply, and professional installation. Our solutions are tailored for diverse facilities, from high-rise buildings and commercial complexes to industrial sites, residential communities, and educational institutions.",
+      description: "We provide complete Emergency Evacuation Plan services in the Philippines, including expert design, equipment supply, and professional installation. Our solutions are tailored for diverse facilities, from high-rise buildings and commercial complexes to industrial sites, residential communities, and educational institutions.",
       category: "fire",
       bgClass: "bg-gradient-to-br from-red-700 to-pink-600",
       image: "/images/fire/fire2.png"
@@ -182,44 +182,37 @@ export default function Services() {
     },
     {
       id: 18,
-      title: "Smart Home Systems",
-      description: "Integrated smart home automation and security systems for modern living.",
+      title: "Earth and Masonry Works",
+      description: "Iron, wood, concrete, masonry, and earth constructions.",
       category: "civil",
       bgClass: "bg-gradient-to-br from-blue-500 to-purple-400",
       image: "/images/IT/IT4.png"
     },
     {
       id: 19,
-      title: "Data Center Security",
-      description: "Comprehensive security solutions for data centers and server facilities.",
+      title: "Material Supply and Fabrication.",
+      description: "Manufacturing and furnishin of building materials and supplies.",
       category: "civil",
       bgClass: "bg-gradient-to-br from-blue-400 to-indigo-300",
       image: "/images/IT/IT5.png"
     },
     {
       id: 20,
-      title: "Video Analytics",
-      description: "Advanced video analytics and AI-powered surveillance intelligence.",
+      title: "Comprehensive Contracting.",
+      description: "Bidding, executing, and receiving contracts or assignment related to construction, and allied activies.",
       category: "civil",
       bgClass: "bg-gradient-to-br from-blue-300 to-purple-200",
       image: "/images/IT/IT6.png"
     },
     {
       id: 21,
-      title: "Cloud Security",
-      description: "Secure cloud infrastructure and data protection solutions.",
+      title: "Support Services",
+      description: "All incidental works and related services necessary for the completion of projects.",
       category: "civil",
       bgClass: "bg-gradient-to-br from-blue-200 to-indigo-100",
       image: "/images/IT/IT7.png"
-    },
-    {
-      id: 22,
-      title: "IoT Security",
-      description: "Security solutions for Internet of Things devices and networks.",
-      category: "civil",
-      bgClass: "bg-gradient-to-br from-blue-100 to-purple-50",
-      image: "/images/IT/IT8.png"
     }
+    
   ];
 
   const filteredServices = activeFilter === "all" 
@@ -236,48 +229,43 @@ export default function Services() {
     <>
       <Header />
       
-      <div className="min-h-screen relative overflow-hidden" style={{ minHeight: '100vh' }}>
-        {/* Enhanced Geometric Background with Animations */}
+      <div className="min-h-screen relative overflow-hidden bg-white">
+        {/* Clean Background with Simple Accents */}
         <div className="absolute inset-0 z-0">
-          {/* Top Half - Teal Background (#31c2c3) */}
-          <div className="absolute top-0 left-0 right-0 h-1/2 bg-[#31c2c3]">
-            {/* Animated Geometric Shapes */}
-            <div className="absolute top-20 left-20 w-16 h-16 bg-[#0a408b] opacity-20 rounded-full animate-pulse"></div>
-            <div className="absolute top-32 right-32 w-12 h-12 bg-[#0a408b] opacity-15 rounded-full animate-pulse delay-1000"></div>
-            <div className="absolute top-40 left-1/3 w-8 h-8 bg-[#0a408b] opacity-25 rounded-full animate-bounce delay-500"></div>
-            <div className="absolute top-16 right-1/4 w-20 h-20 bg-[#0a408b] opacity-10 rounded-full animate-pulse delay-1500"></div>
-            
-            {/* Floating Geometric Shapes */}
-            <div className="absolute top-1/4 left-1/6 w-8 h-8 bg-[#0a408b] opacity-30 rotate-45 animate-float-slow"></div>
-            <div className="absolute top-1/3 right-1/5 w-12 h-12 bg-[#0a408b] opacity-25 rounded-full animate-float-medium"></div>
-            <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-[#0a408b] opacity-35 rotate-90 animate-float-fast"></div>
-            
-            {/* Wavy bottom edge to separate from bottom half */}
-            <svg className="absolute bottom-0 left-0 right-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#0a408b" opacity="0.4"></path>
-              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#0a408b" opacity="0.3"></path>
-            </svg>
-          </div>
+          {/* Simple blue accent line at top */}
+          <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-green-500"></div>
           
-          {/* Bottom Half - Dark Blue Background (#0a408b) */}
-          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#0a408b]">
-            {/* Wavy top edge to separate from top half */}
-            <svg className="absolute top-0 left-0 right-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#31c2c3" opacity="0.3"></path>
-              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#31c2c3" opacity="0.2"></path>
-            </svg>
-            
-            {/* Decorative elements for bottom section */}
-            <div className="absolute bottom-20 right-20 w-20 h-20 bg-[#31c2c3] opacity-30 rounded-full animate-pulse delay-2000"></div>
-            <div className="absolute bottom-32 left-1/4 w-16 h-16 bg-[#31c2c3] opacity-20 rounded-full animate-pulse delay-2500"></div>
-            <div className="absolute bottom-40 right-1/3 w-12 h-12 bg-[#31c2c3] opacity-25 rounded-full animate-bounce delay-3000"></div>
-          </div>
+          {/* Simple green accent line at bottom */}
+          <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-green-500 to-blue-500"></div>
           
-          {/* Additional floating wavy elements for more dynamic feel */}
-          <div className="absolute top-1/4 left-0 w-32 h-32 bg-[#31c2c3] opacity-10 rounded-full transform -translate-x-16 animate-pulse delay-1000"></div>
-          <div className="absolute top-1/3 right-0 w-24 h-24 bg-[#0a408b] opacity-15 rounded-full transform translate-x-12 animate-pulse delay-1500"></div>
-          <div className="absolute bottom-1/3 left-0 w-28 h-28 bg-[#31c2c3] opacity-8 rounded-full transform -translate-x-14 animate-pulse delay-2000"></div>
-          <div className="absolute bottom-1/4 right-0 w-20 h-20 bg-[#0a408b] opacity-12 rounded-full transform translate-x-10 animate-pulse delay-2500"></div>
+          {/* Geometric Shapes - Blue and Green */}
+          {/* Top Right - Blue Triangle */}
+          <div className="absolute top-20 right-20 w-0 h-0 border-l-[25px] border-l-transparent border-b-[43px] border-b-blue-400 opacity-20 animate-bounce delay-1000"></div>
+          
+          {/* Top Left - Green Square */}
+          <div className="absolute top-16 left-20 w-16 h-16 bg-green-400 opacity-20 rotate-45 animate-pulse delay-500"></div>
+          
+          {/* Middle Left - Blue Circle */}
+          <div className="absolute top-1/2 left-10 w-20 h-20 bg-blue-300 rounded-full opacity-15 animate-ping delay-2000"></div>
+          
+          {/* Middle Right - Green Triangle */}
+          <div className="absolute top-1/3 right-10 w-0 h-0 border-l-[20px] border-l-transparent border-b-[35px] border-b-green-400 opacity-20 animate-bounce delay-1500"></div>
+          
+          {/* Bottom Left - Blue Square */}
+          <div className="absolute bottom-20 left-16 w-12 h-12 bg-blue-400 opacity-20 rotate-45 animate-pulse delay-3000"></div>
+          
+          {/* Bottom Right - Green Circle */}
+          <div className="absolute bottom-16 right-16 w-16 h-16 bg-green-300 rounded-full opacity-15 animate-ping delay-1000"></div>
+          
+          {/* Additional small shapes for texture */}
+          <div className="absolute top-32 left-1/4 w-8 h-8 bg-blue-200 opacity-30 rotate-45 animate-spin delay-2000"></div>
+          <div className="absolute bottom-32 right-1/4 w-6 h-6 bg-green-200 opacity-25 rounded-full animate-pulse delay-2500"></div>
+          <div className="absolute top-40 right-1/3 w-10 h-10 bg-blue-200 opacity-20 rotate-45 animate-bounce delay-500"></div>
+          
+          {/* More floating shapes */}
+          <div className="absolute top-1/4 left-1/6 w-6 h-6 bg-blue-200 opacity-25 rotate-90 animate-float-slow"></div>
+          <div className="absolute top-3/4 right-1/6 w-8 h-8 bg-green-200 opacity-20 rounded-full animate-float-medium"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-blue-300 opacity-30 rotate-45 animate-float-fast"></div>
         </div>
 
         {/* Interactive Geometric Overlay */}
@@ -308,20 +296,20 @@ export default function Services() {
 
         {/* Content */}
         <div className="relative z-20">
-          {/* Hero Section with Enhanced Geometric Elements */}
-          <section className="bg-gradient-to-br from-[#0a408b] via-[#1a4a9a] to-[#2a5aaa] text-white py-20 relative overflow-hidden">
-            {/* Enhanced Background Pattern */}
-            <div className="absolute inset-0 opacity-30">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
+          {/* Hero Section with Clean Design */}
+          <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-green-600 text-white py-20 relative overflow-hidden">
+            {/* Simple Background Pattern */}
+            <div className="absolute inset-0 opacity-20">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent"></div>
             </div>
             
-            {/* Geometric Border Elements */}
+            {/* Simple Border Elements */}
             <div className="absolute top-0 left-0 w-32 h-32 border-l-4 border-t-4 border-white/30 rounded-tl-3xl"></div>
             <div className="absolute top-0 right-0 w-32 h-32 border-r-4 border-t-4 border-white/30 rounded-tr-3xl"></div>
             <div className="absolute bottom-0 left-0 w-32 h-32 border-l-4 border-b-4 border-white/30 rounded-bl-3xl"></div>
             <div className="absolute bottom-0 right-0 w-32 h-32 border-r-4 border-b-4 border-white/30 rounded-br-3xl"></div>
             
-            {/* Floating Geometric Shapes */}
+            {/* Simple Floating Shapes */}
             <div className="absolute top-10 left-10 w-16 h-16 border-2 border-white/20 rotate-45 animate-spin-medium"></div>
             <div className="absolute top-20 right-20 w-12 h-12 border-2 border-white/15 rounded-full animate-pulse"></div>
             <div className="absolute bottom-20 left-1/4 w-20 h-20 border-2 border-white/25 rotate-90 animate-float-medium"></div>
@@ -371,8 +359,8 @@ export default function Services() {
             </div>
           </section>
 
-                     {/* Filter Section with Enhanced Geometric Design */}
-            <section className="py-16 bg-gradient-to-br from-white/95 via-blue-50/30 to-white/95 backdrop-blur-md border-b border-blue-200/50 relative z-20">
+                     {/* Filter Section with Clean Design */}
+            <section className="py-16 bg-white border-b border-blue-200/50 relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Enhanced Geometric Decorative Elements */}
                 <div className="flex justify-center mb-12">
@@ -455,12 +443,12 @@ export default function Services() {
               <section className="py-20 relative z-20">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                  <div className="text-center mb-12">
-                   <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Comprehensive Fire and Safety Solutions</h2>
-                   <p className="text-xl text-white/90 font-semibold mb-6 drop-shadow-md">Maintenance, Supply & Installation Across Region and Philippines.</p>
+                   <h2 className="text-4xl font-bold text-black mb-4 drop-shadow-lg">Comprehensive Fire and Safety Solutions</h2>
+                   <p className="text-xl text-black/90 font-semibold mb-6 drop-shadow-md">Maintenance, Supply & Installation Across Region and Philippines.</p>
                  </div>
                  
                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/30">
-                   <p className="text-lg text-white leading-relaxed text-center drop-shadow-sm">
+                   <p className="text-lg text-black leading-relaxed text-center drop-shadow-sm">
                      At RQUIN Integrated Solutions Inc., we provide comprehensive, end-to-end fire safety and protection system solutions designed to safeguard lives and assets. We offer unparalleled expertise in the maintenance, supply, and installation of all types of fire safety equipment and integrated systems for commercial, industrial, and residential properties in The Philippines.
                    </p>
                  </div>
@@ -473,12 +461,12 @@ export default function Services() {
              <section className="py-20 relative z-20">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                  <div className="text-center mb-12">
-                   <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Advanced IT & Security Services for Smart Protection</h2>
-                   <p className="text-xl text-white/90 font-semibold mb-6 drop-shadow-md">End-to-End Technology for a Safer Environment</p>
+                   <h2 className="text-4xl font-bold text-black mb-4 drop-shadow-lg">Advanced IT & Security Services for Smart Protection</h2>
+                   <p className="text-xl text-black/90 font-semibold mb-6 drop-shadow-md">End-to-End Technology for a Safer Environment</p>
                  </div>
                  
                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/30">
-                   <p className="text-lg text-white leading-relaxed text-center drop-shadow-sm">
+                   <p className="text-lg text-black leading-relaxed text-center drop-shadow-sm">
                      RQUIN is a leading provider of integrated IT and security system solutions serving Abu Dhabi, Dubai, and across the entire United Arab Emirates. We offer a full spectrum of services from initial consultation and system design to professional installation, ongoing maintenance, and reliable supply of cutting-edge equipment. We are committed to empowering businesses throughout the UAE with robust, secure, and efficient technological infrastructures that protect assets, optimize operations, and ensure business continuity.
                    </p>
                  </div>
@@ -893,7 +881,7 @@ export default function Services() {
                                  title: "System Supply & Procurement",
                                  description: "Advanced closed-circuit television and surveillance systems for comprehensive security monitoring.",
                                  image: "/images/IT/IT1.png",
-                                 details: "We supply high-quality, reliable, and future-proof IT and security equipment from industry-leading manufacturers such as Cisco, HP, Dell, Microsoft, Hikvision, Dahua, Honeywell, and Bosch. All products supplied comply with relevant UAE safety and quality standards.\n\nIT Systems:\n• Servers (rack, tower, blade)\n• Networking equipment (switches, routers, firewalls, access points, SD-WAN solutions)\n• Workstations & laptops, printers & peripherals\n• Comprehensive software licenses (operating systems, office suites, antivirus, specialized applications, ERP/CRM)\n• Diverse data storage solutions (NAS, SAN, cloud storage, hyper-converged infrastructure)\n• Robust cabling infrastructure (fiber optic, Cat6/7)\n• Advanced telephony systems (VoIP, PABX)\n\nSecurity Systems:\n• Advanced CCTV surveillance systems (IP cameras, DVR/NVR, video analytics, thermal imaging)\n• Secure access control systems (biometric, card readers, turnstiles, door locks, visitor management systems)\n• Reliable intrusion detection systems (alarms, motion sensors, glass break detectors, perimeter fencing solutions)\n• Compliant fire alarm systems (conventional, addressable, smoke/heat detectors, aspirating smoke detection)\n• Essential intercom & public address systems\n• Comprehensive perimeter security solutions (fence-mounted detection, LiDAR)\n• Specialized data center security (environmental monitoring, rack access control)"
+                                 details: "We supply high-quality, reliable, and future-proof IT and security equipment from industry-leading manufacturers such as Cisco, HP, Dell, Microsoft, Hikvision, Dahua, Honeywell, and Bosch. All products supplied comply with relevant Philippines safety and quality standards.\n\nIT Systems:\n• Servers (rack, tower, blade)\n• Networking equipment (switches, routers, firewalls, access points, SD-WAN solutions)\n• Workstations & laptops, printers & peripherals\n• Comprehensive software licenses (operating systems, office suites, antivirus, specialized applications, ERP/CRM)\n• Diverse data storage solutions (NAS, SAN, cloud storage, hyper-converged infrastructure)\n• Robust cabling infrastructure (fiber optic, Cat6/7)\n• Advanced telephony systems (VoIP, PABX)\n\nSecurity Systems:\n• Advanced CCTV surveillance systems (IP cameras, DVR/NVR, video analytics, thermal imaging)\n• Secure access control systems (biometric, card readers, turnstiles, door locks, visitor management systems)\n• Reliable intrusion detection systems (alarms, motion sensors, glass break detectors, perimeter fencing solutions)\n• Compliant fire alarm systems (conventional, addressable, smoke/heat detectors, aspirating smoke detection)\n• Essential intercom & public address systems\n• Comprehensive perimeter security solutions (fence-mounted detection, LiDAR)\n• Specialized data center security (environmental monitoring, rack access control)"
                                })}
                              >
                                <div className="absolute inset-0 z-0">
@@ -968,6 +956,33 @@ export default function Services() {
                                  </p>
                                </div>
                              </div>
+
+                             {/* Card 4: Support Services */}
+                             <div 
+                               className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
+                               onClick={() => openModal({
+                                 title: "Support Services",
+                                 description: "All incidental works and related services necessary for the completion of projects.",
+                                 image: "/images/IT/IT7.png",
+                                 details: "Our support services provide comprehensive assistance for all incidental works and related services necessary for the completion of projects. We ensure smooth project execution and timely delivery."
+                               })}
+                             >
+                               <div className="absolute inset-0 z-0">
+                                 <img 
+                                   src="/images/IT/IT7.png" 
+                                   alt="Support Services"
+                                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                                 />
+                               </div>
+                               <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
+                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
+                                   Support Services
+                                 </h3>
+                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
+                                   Click to learn more
+                                 </p>
+                               </div>
+                             </div>
                            </div>
                          </div>
                        </section>
@@ -982,7 +997,7 @@ export default function Services() {
                              <div 
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
-                                 title: "Smart Home Systems",
+                                 title: "Earth and Masonry Works",
                                  description: "Integrated smart home automation and security systems for modern living.",
                                  image: "/images/IT/IT4.png",
                                  details: "Our smart home systems integrate automation, security, and entertainment into one seamless platform. We provide complete smart home solutions that enhance comfort, security, and energy efficiency."
@@ -991,13 +1006,13 @@ export default function Services() {
                                <div className="absolute inset-0 z-0">
                                  <img 
                                    src="/images/IT/IT4.png" 
-                                   alt="Smart Home Systems"
+                                   alt="Earth and Masonry Works"
                                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
                                  <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
-                                   Smart Home Systems
+                                   Earth and Masonry Works
                                  </h3>
                                  <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
                                    Click to learn more
@@ -1009,7 +1024,7 @@ export default function Services() {
                              <div 
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
-                                 title: "Data Center Security",
+                                 title: "Material Supply and Fabrication.",
                                  description: "Comprehensive security solutions for data centers and server facilities.",
                                  image: "/images/IT/IT5.png",
                                  details: "Our data center security solutions provide comprehensive protection for critical infrastructure. We implement multi-layered security including physical access control, environmental monitoring, and advanced threat detection systems."
@@ -1018,13 +1033,13 @@ export default function Services() {
                                <div className="absolute inset-0 z-0">
                                  <img 
                                    src="/images/IT/IT5.png" 
-                                   alt="Data Center Security"
+                                   alt="Material Supply and Fabrication."
                                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
                                  <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
-                                   Data Center Security
+                                   Material Supply and Fabrication.
                                  </h3>
                                  <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
                                    Click to learn more
@@ -1036,7 +1051,7 @@ export default function Services() {
                              <div 
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
-                                 title: "Video Analytics",
+                                 title: "Comprehensive Contracting.",
                                  description: "Advanced video analytics and AI-powered surveillance intelligence.",
                                  image: "/images/IT/IT6.png",
                                  details: "Our advanced video analytics systems use artificial intelligence to provide intelligent surveillance capabilities. We offer facial recognition, object detection, behavior analysis, and automated alerting systems."
@@ -1045,13 +1060,13 @@ export default function Services() {
                                <div className="absolute inset-0 z-0">
                                  <img 
                                    src="/images/IT/IT6.png" 
-                                   alt="Video Analytics"
+                                   alt="Comprehensive Contracting."
                                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
                                  <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
-                                   Video Analytics
+                                   Comprehensive Contracting.
                                  </h3>
                                  <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
                                    Click to learn more
@@ -1063,7 +1078,7 @@ export default function Services() {
                              <div 
                                className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                onClick={() => openModal({
-                                 title: "Cloud Security",
+                                 title: "Support Services",
                                  description: "Secure cloud infrastructure and data protection solutions.",
                                  image: "/images/IT/IT7.png",
                                  details: "Our cloud security solutions protect your data and applications in cloud environments. We implement comprehensive security measures including encryption, access control, threat detection, and compliance monitoring."
@@ -1072,13 +1087,13 @@ export default function Services() {
                                <div className="absolute inset-0 z-0">
                                  <img 
                                    src="/images/IT/IT7.png" 
-                                   alt="Cloud Security"
+                                   alt="Support Services"
                                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                                  />
                                </div>
                                <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
                                  <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
-                                   Cloud Security
+                                   Support Services
                                  </h3>
                                  <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
                                    Click to learn more
@@ -1086,32 +1101,7 @@ export default function Services() {
                                </div>
                              </div>
 
-                             {/* Card 5: IoT Security */}
-                             <div 
-                               className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
-                               onClick={() => openModal({
-                                 title: "IoT Security",
-                                 description: "Security solutions for Internet of Things devices and networks.",
-                                 image: "/images/IT/IT8.png",
-                                 details: "Our IoT security solutions protect connected devices and networks from cyber threats. We implement device authentication, network segmentation, encryption, and continuous monitoring for IoT environments."
-                               })}
-                             >
-                               <div className="absolute inset-0 z-0">
-                                 <img 
-                                   src="/images/IT/IT8.png" 
-                                   alt="IoT Security"
-                                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                                 />
-                               </div>
-                               <div className="relative z-20 p-6 h-full flex flex-col justify-center text-center">
-                                 <h3 className="text-xl font-bold text-white mb-3 leading-tight drop-shadow-lg uppercase tracking-wide">
-                                   IoT Security
-                                 </h3>
-                                 <p className="text-white text-sm leading-relaxed opacity-95 drop-shadow-md">
-                                   Click to learn more
-                                 </p>
-                               </div>
-                             </div>
+
                            </div>
                          </div>
                        </section>
@@ -1206,47 +1196,67 @@ export default function Services() {
                       )}
 
                      {/* Additional Info Section */}
-           <section className="py-20 relative z-20 bg-gradient-to-br from-[#0a408b] via-[#1a4a9a] to-[#2a5aaa]">
+           <section className="py-20 relative z-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
               {/* Enhanced Heading Separator */}
               <div className="flex justify-center mb-8">
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-green-400 rounded-full animate-expand-width"></div>
               </div>
               
-              <h2 className="text-3xl font-bold text-white mb-6 drop-shadow-lg">Why Choose Our Services?</h2>
-              <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12 drop-shadow-md">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Our Services?</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
                 We combine expertise in fire safety, technology, and engineering to deliver comprehensive solutions for all your needs.
               </p>
               
+              {/* Geometric Shapes - Blue and Green */}
+              <div className="absolute inset-0 z-0">
+                {/* Top Left - Blue Triangle */}
+                <div className="absolute top-10 left-10 w-0 h-0 border-l-[20px] border-l-transparent border-b-[35px] border-b-blue-400 opacity-20 animate-bounce delay-1000"></div>
+                
+                {/* Top Right - Green Square */}
+                <div className="absolute top-16 right-16 w-12 h-12 bg-green-400 opacity-20 rotate-45 animate-pulse delay-500"></div>
+                
+                {/* Bottom Left - Blue Circle */}
+                <div className="absolute bottom-20 left-20 w-16 h-16 bg-blue-300 rounded-full opacity-15 animate-ping delay-2000"></div>
+                
+                {/* Bottom Right - Green Triangle */}
+                <div className="absolute bottom-16 right-10 w-0 h-0 border-l-[15px] border-l-transparent border-b-[26px] border-b-green-400 opacity-20 animate-bounce delay-1500"></div>
+                
+                {/* Additional small shapes for texture */}
+                <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-blue-200 opacity-30 rotate-45 animate-spin delay-2000"></div>
+                <div className="absolute bottom-1/3 right-1/4 w-6 h-6 bg-green-200 opacity-25 rounded-full animate-pulse delay-2500"></div>
+                <div className="absolute top-1/2 right-1/3 w-10 h-10 bg-blue-200 opacity-20 rotate-45 animate-bounce delay-500"></div>
+              </div>
+              
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center group">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-white/30">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-blue-200">
+                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2 drop-shadow-md">Safety First</h3>
-                  <p className="text-white/90 drop-shadow-sm">Your safety and security are our top priorities in every project.</p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Safety First</h3>
+                  <p className="text-gray-600">Your safety and security are our top priorities in every project.</p>
                 </div>
                 
                 <div className="text-center group">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-white/30">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-green-200">
+                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2 drop-shadow-md">Innovation</h3>
-                  <p className="text-white/90 drop-shadow-sm">Cutting-edge technology and modern engineering solutions.</p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Innovation</h3>
+                  <p className="text-gray-600">Cutting-edge technology and modern engineering solutions.</p>
                 </div>
                 
                 <div className="text-center group">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-white/30">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-blue-200">
+                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
+                  </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2 drop-shadow-md">Expert Team</h3>
-                  <p className="text-white/90 drop-shadow-sm">Certified professionals with years of industry experience.</p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Expert Team</h3>
+                  <p className="text-gray-600">Certified professionals with years of industry experience.</p>
                 </div>
               </div>
             </div>

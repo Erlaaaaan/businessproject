@@ -28,16 +28,13 @@ export default function PageTransition({ children }) {
         <div className="fixed inset-0 z-[9999] bg-transparent backdrop-blur-2xl flex items-center justify-center pointer-events-none">
           {/* Animated Loading Elements */}
           <div className="text-center text-white">
-            {/* Company Logo/Name */}
-            <div className="text-6xl font-bold mb-6 animate-pulse drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">RQUIN</div>
-            
             {/* Loading Spinner */}
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]"></div>
             </div>
             
             {/* Loading Text */}
-            <div className="text-xl animate-pulse drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">Loading...</div>
+            <div className="text-xl animate-pulse drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">Loading</div>
             
             {/* Animated Dots */}
             <div className="flex justify-center mt-4 space-x-2">

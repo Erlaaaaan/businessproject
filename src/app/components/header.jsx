@@ -43,35 +43,11 @@ export default function Header() {
     }`}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Left Navigation - Hidden on Mobile */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link 
-              href="/Project" 
-              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
-            >
-              Projects
-            </Link>
-            
-            <Link 
-              href="/Services" 
-              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
-            >
-              Services
-            </Link>
-            
-            <Link 
-              href="/about" 
-              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
-            >
-              About
-            </Link>
-          </nav>
-
-          {/* Logo - Centered */}
-          <div className="flex-shrink-0 absolute left-1/2 transform -translate-x-1/2">
+          {/* Logo - Left Side */}
+          <div className="flex-shrink-0">
             <Image
               src="/images/logo.png"
-              alt=""
+              alt="RQUIN Logo"
               width={200}
               height={80}
               className="h-32 w-auto object-contain md:h-16 lg:h-50"
@@ -80,18 +56,39 @@ export default function Header() {
             />
           </div>
 
-          {/* Right Navigation - Hidden on Mobile */}
-          <nav className="hidden md:flex items-center space-x-6">
+          {/* Center Navigation - Hidden on Mobile */}
+          <nav className="hidden md:flex items-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
+            <Link 
+              href="/Project" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
+            >
+              Projects
+            </Link>
+            
             <Link 
               href="/" 
-              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
             >
               Home
             </Link>
             
             <Link 
+              href="/Services" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
+            >
+              Services
+            </Link>
+            
+            <Link 
+              href="/about" 
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
+            >
+              About
+            </Link>
+            
+            <Link 
               href="/people" 
-              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]"
+              className="text-black hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 uppercase tracking-wide drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] font-montserrat"
             >
               People
             </Link>
@@ -143,7 +140,7 @@ export default function Header() {
               <div className="space-y-4">
                 <Link 
                   href="/" 
-                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm font-montserrat"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
@@ -151,7 +148,7 @@ export default function Header() {
                 
                 <Link 
                   href="/Project" 
-                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm font-montserrat"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Projects
@@ -159,7 +156,7 @@ export default function Header() {
                 
                 <Link 
                   href="/Services" 
-                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm font-montserrat"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Services
@@ -167,14 +164,14 @@ export default function Header() {
                 
                 <Link 
                   href="/about" 
-                  className="text-blue-800 hover:text-green-700 block w-full text-left px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  className="text-blue-800 hover:text-green-700 block w-full text-left px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm font-montserrat"
                 >
                   About
                 </Link>
                 
                 <Link 
                   href="/people" 
-                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm"
+                  className="text-blue-800 hover:text-green-700 block px-4 py-3 text-lg font-medium transition-colors duration-200 border-b-2 border-blue-200 bg-white hover:bg-green-50 rounded-lg shadow-sm font-montserrat"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   People

@@ -240,48 +240,43 @@ export default function Projects() {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Enhanced Geometric Background with Animations */}
+    <div className="min-h-screen relative overflow-hidden bg-white">
+      {/* Clean Background with Simple Accents */}
       <div className="absolute inset-0 z-0">
-        {/* Top Half - Teal Background (#31c2c3) */}
-        <div className="absolute top-0 left-0 right-0 h-1/2 bg-[#31c2c3]">
-          {/* Animated Geometric Shapes */}
-          <div className="absolute top-20 left-20 w-16 h-16 bg-[#0a408b] opacity-20 rounded-full animate-pulse"></div>
-          <div className="absolute top-32 right-32 w-12 h-12 bg-[#0a408b] opacity-15 rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute top-40 left-1/3 w-8 h-8 bg-[#0a408b] opacity-25 rounded-full animate-bounce delay-500"></div>
-          <div className="absolute top-16 right-1/4 w-20 h-20 bg-[#0a408b] opacity-10 rounded-full animate-pulse delay-1500"></div>
-          
-          {/* Floating Geometric Shapes */}
-          <div className="absolute top-1/4 left-1/6 w-8 h-8 bg-[#0a408b] opacity-30 rotate-45 animate-float-slow"></div>
-          <div className="absolute top-1/3 right-1/5 w-12 h-12 bg-[#0a408b] opacity-25 rounded-full animate-float-medium"></div>
-          <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-[#0a408b] opacity-35 rotate-90 animate-float-fast"></div>
-          
-          {/* Wavy bottom edge to separate from bottom half */}
-          <svg className="absolute bottom-0 left-0 right-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#0a408b" opacity="0.4"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#0a408b" opacity="0.3"></path>
-          </svg>
-        </div>
+        {/* Simple blue accent line at top */}
+        <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-green-500"></div>
         
-        {/* Bottom Half - Dark Blue Background (#0a408b) */}
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#0a408b]">
-          {/* Wavy top edge to separate from top half */}
-          <svg className="absolute top-0 left-0 right-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#31c2c3" opacity="0.3"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#31c2c3" opacity="0.2"></path>
-          </svg>
-          
-          {/* Decorative elements for bottom section */}
-          <div className="absolute bottom-20 right-20 w-20 h-20 bg-[#31c2c3] opacity-30 rounded-full animate-pulse delay-2000"></div>
-          <div className="absolute bottom-32 left-1/4 w-16 h-16 bg-[#31c2c3] opacity-20 rounded-full animate-pulse delay-2500"></div>
-          <div className="absolute bottom-40 right-1/3 w-12 h-12 bg-[#31c2c3] opacity-25 rounded-full animate-bounce delay-3000"></div>
-        </div>
+        {/* Simple green accent line at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-green-500 to-blue-500"></div>
         
-        {/* Additional floating wavy elements for more dynamic feel */}
-        <div className="absolute top-1/4 left-0 w-32 h-32 bg-[#31c2c3] opacity-10 rounded-full transform -translate-x-16 animate-pulse delay-1000"></div>
-        <div className="absolute top-1/3 right-0 w-24 h-24 bg-[#0a408b] opacity-15 rounded-full transform translate-x-12 animate-pulse delay-1500"></div>
-        <div className="absolute bottom-1/3 left-0 w-28 h-28 bg-[#31c2c3] opacity-8 rounded-full transform -translate-x-14 animate-pulse delay-2000"></div>
-        <div className="absolute bottom-1/4 right-0 w-20 h-20 bg-[#0a408b] opacity-12 rounded-full transform translate-x-10 animate-pulse delay-2500"></div>
+        {/* Geometric Shapes - Blue and Green */}
+        {/* Top Right - Blue Triangle */}
+        <div className="absolute top-20 right-20 w-0 h-0 border-l-[25px] border-l-transparent border-b-[43px] border-b-blue-400 opacity-20 animate-bounce delay-1000"></div>
+        
+        {/* Top Left - Green Square */}
+        <div className="absolute top-16 left-20 w-16 h-16 bg-green-400 opacity-20 rotate-45 animate-pulse delay-500"></div>
+        
+        {/* Middle Left - Blue Circle */}
+        <div className="absolute top-1/2 left-10 w-20 h-20 bg-blue-300 rounded-full opacity-15 animate-ping delay-2000"></div>
+        
+        {/* Middle Right - Green Triangle */}
+        <div className="absolute top-1/3 right-10 w-0 h-0 border-l-[20px] border-l-transparent border-b-[35px] border-b-green-400 opacity-20 animate-bounce delay-1500"></div>
+        
+        {/* Bottom Left - Blue Square */}
+        <div className="absolute bottom-20 left-16 w-12 h-12 bg-blue-400 opacity-20 rotate-45 animate-pulse delay-3000"></div>
+        
+        {/* Bottom Right - Green Circle */}
+        <div className="absolute bottom-16 right-16 w-16 h-16 bg-green-300 rounded-full opacity-15 animate-ping delay-1000"></div>
+        
+        {/* Additional small shapes for texture */}
+        <div className="absolute top-32 left-1/4 w-8 h-8 bg-blue-200 opacity-30 rotate-45 animate-spin delay-2000"></div>
+        <div className="absolute bottom-32 right-1/4 w-6 h-6 bg-green-200 opacity-25 rounded-full animate-pulse delay-2500"></div>
+        <div className="absolute top-40 right-1/3 w-10 h-10 bg-blue-200 opacity-20 rotate-45 animate-bounce delay-500"></div>
+        
+        {/* More floating shapes */}
+        <div className="absolute top-1/4 left-1/6 w-6 h-6 bg-blue-200 opacity-25 rotate-90 animate-float-slow"></div>
+        <div className="absolute top-3/4 right-1/6 w-8 h-8 bg-green-200 opacity-20 rounded-full animate-float-medium"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-blue-300 opacity-30 rotate-45 animate-float-fast"></div>
       </div>
 
       {/* Interactive Geometric Overlay */}
@@ -314,20 +309,20 @@ export default function Projects() {
       <div className="relative z-20">
         <Header />
         
-        {/* Hero Section with Enhanced Geometric Elements */}
-        <section className="bg-gradient-to-br from-[#0a408b] via-[#1a4a9a] to-[#2a5aaa] text-white py-20 relative overflow-hidden">
-          {/* Enhanced Background Pattern */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
+        {/* Hero Section with Clean Design */}
+        <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-green-600 text-white py-20 relative overflow-hidden">
+          {/* Simple Background Pattern */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent"></div>
           </div>
           
-          {/* Geometric Border Elements */}
+          {/* Simple Border Elements */}
           <div className="absolute top-0 left-0 w-32 h-32 border-l-4 border-t-4 border-white/30 rounded-tl-3xl"></div>
           <div className="absolute top-0 right-0 w-32 h-32 border-r-4 border-t-4 border-white/30 rounded-tr-3xl"></div>
           <div className="absolute bottom-0 left-0 w-32 h-32 border-l-4 border-b-4 border-white/30 rounded-bl-3xl"></div>
           <div className="absolute bottom-0 right-0 w-32 h-32 border-r-4 border-b-4 border-white/30 rounded-br-3xl"></div>
           
-          {/* Floating Geometric Shapes */}
+          {/* Simple Floating Shapes */}
           <div className="absolute top-10 left-10 w-16 h-16 border-2 border-white/20 rotate-45 animate-spin-medium"></div>
           <div className="absolute top-20 right-20 w-12 h-12 border-2 border-white/15 rounded-full animate-pulse"></div>
           <div className="absolute bottom-20 left-1/4 w-20 h-20 border-2 border-white/25 rotate-90 animate-float-medium"></div>
@@ -377,8 +372,8 @@ export default function Projects() {
           </div>
         </section>
 
-        {/* Category Filter with Enhanced Geometric Design */}
-        <section className="py-16 bg-gradient-to-br from-white/95 via-blue-50/30 to-white/95 backdrop-blur-md border-b border-blue-200/50 relative z-20">
+        {/* Category Filter with Clean Design */}
+        <section className="py-16 bg-white border-b border-blue-200/50 relative z-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Enhanced Geometric Decorative Elements */}
             <div className="flex justify-center mb-12">

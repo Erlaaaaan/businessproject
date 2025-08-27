@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Orbitron } from "next/font/google";
+import { Geist, Geist_Mono, Orbitron, Montserrat } from "next/font/google";
 import "./globals.css";
 import PageTransition from "./components/pageTransition";
 
@@ -18,6 +18,12 @@ const customFont = Orbitron({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
 export const metadata = {
   title: "RQUIN",
   description: "RQUIN Integrated Solutions INC.",
@@ -30,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${customFont.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${customFont.variable} ${montserrat.variable} antialiased`}
       >
         <PageTransition>
           {children}
