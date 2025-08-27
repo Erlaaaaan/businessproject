@@ -94,6 +94,15 @@ export default function Header() {
             </Link>
           </nav>
 
+          {/* Get a Quote Button - Right Side */}
+          <div className="hidden md:block">
+            <Link href="/qoute">
+              <button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-bold py-3 px-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide">
+                Get a Quote
+              </button>
+            </Link>
+          </div>
+
           {/* Mobile menu button - Right Side */}
           <div className="md:hidden">
             <button
@@ -175,6 +184,16 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   People
+                </Link>
+
+                {/* Get a Quote Button for Mobile */}
+                <Link href="/qoute">
+                  <button 
+                    className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-bold py-4 px-6 rounded-lg border-2 border-blue-300 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide text-lg"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Get a Quote
+                  </button>
                 </Link>
               </div>
             </div>

@@ -27,20 +27,20 @@ export default function Footer() {
                   alt="RQUIN Logo"
                   width={160}
                   height={64}
-                  className="h-20 w-auto object-contain transition-all duration-500 hover:scale-110"
+                  className="h-30 w-auto object-contain transition-all duration-500 hover:scale-110"
                 />
               </div>
               
               {/* Company Description */}
-              <div className="mb-6">
-                <p className="text-black text-sm mb-4 leading-relaxed font-montserrat">
+              <div className="mb-0">
+                <p className="text-black text-sm mb-1 leading-relaxed font-montserrat">
                   Leading the way in Safety, Construction & Technology. We specialize in delivering integrated solutions from fire protection and electrical systems to security, civil works and engineering services.
                 </p>
               </div>
               
               {/* Contact Information */}
-              <div className="mb-6">
-                <div className="flex items-center mb-3">
+              <div className="mb-2">
+                <div className="flex items-center mb-1">
                   <svg className="w-5 h-5 text-green-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
