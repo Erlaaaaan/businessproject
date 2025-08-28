@@ -88,7 +88,7 @@ export default function Header() {
                 >
                   <div className="py-3">
                     <Link 
-                      href="/Services#fire-safety" 
+                      href="/fire" 
                       className="flex items-center px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 font-medium border-b border-gray-100 last:border-b-0"
                     >
                       <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3">
@@ -103,7 +103,7 @@ export default function Header() {
                       </div>
                     </Link>
                     <Link 
-                      href="/Services#systems" 
+                      href="/IT" 
                       className="flex items-center px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 font-medium border-b border-gray-100 last:border-b-0"
                     >
                       <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
@@ -112,12 +112,12 @@ export default function Header() {
                         </svg>
                       </div>
                       <div>
-                        <div className="font-bold text-sm">Systems</div>
+                        <div className="font-bold text-sm">IT & Security Systems</div>
                         <div className="text-xs text-gray-500">Integrated IT and security solutions</div>
                       </div>
-            </Link>
-            <Link 
-                      href="/Services#civil" 
+                    </Link>
+                    <Link 
+                      href="/civil" 
                       className="flex items-center px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 font-medium border-b border-gray-100 last:border-b-0"
                     >
                       <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
@@ -129,7 +129,7 @@ export default function Header() {
                         <div className="font-bold text-sm">Civil Works & Engineering</div>
                         <div className="text-xs text-gray-500">Infrastructure and construction solutions</div>
                       </div>
-            </Link>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -153,7 +153,7 @@ export default function Header() {
           {/* Get a Quote Button - Right Side */}
           <div className="hidden md:block">
             <Link href="/qoute">
-              <button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-bold py-3 px-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide">
+              <button className="bg-[#0a810d] hover:bg-[#086a0a] text-white font-bold py-3 px-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide">
                 Get a Quote
               </button>
             </Link>
@@ -217,21 +217,21 @@ export default function Header() {
                     Services
                   </div>
                   <Link 
-                    href="/Services#fire-safety" 
+                    href="/fire" 
                     className="text-blue-800 hover:text-green-700 block px-8 py-2 text-lg font-medium transition-colors duration-200 bg-white hover:bg-green-50 rounded-lg shadow-sm ml-4"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     • Fire And Safety
                   </Link>
                 <Link 
-                    href="/Services#systems" 
+                    href="/IT" 
                     className="text-blue-800 hover:text-green-700 block px-8 py-2 text-lg font-medium transition-colors duration-200 bg-white hover:bg-green-50 rounded-lg shadow-sm ml-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                    • Systems
+                    • IT & Security Systems
                 </Link>
                 <Link 
-                    href="/Services#civil" 
+                    href="/civil" 
                     className="text-blue-800 hover:text-green-700 block px-8 py-2 text-lg font-medium transition-colors duration-200 bg-white hover:bg-green-50 rounded-lg shadow-sm ml-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -257,7 +257,7 @@ export default function Header() {
                 {/* Get a Quote Button for Mobile */}
                 <Link href="/qoute">
                   <button 
-                    className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-bold py-4 px-6 rounded-lg border-2 border-blue-300 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide text-lg"
+                    className="w-full bg-[#0a810d] hover:bg-[#086a0a] text-white font-bold py-4 px-6 rounded-lg border-2 border-blue-300 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide text-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Get a Quote

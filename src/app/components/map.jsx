@@ -84,7 +84,7 @@ export default function Map() {
                 </p>
                 <div className="flex justify-center">
                   <Link href="/qoute">
-                    <button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base">
+                    <button className="bg-[#0a810d] hover:bg-[#086a0a] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base">
                       <span className="text-xl sm:text-2xl">🔥</span>
                       <span>Get A Quote</span>
                     </button>

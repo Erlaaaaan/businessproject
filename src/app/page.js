@@ -15,24 +15,16 @@ export default function Home() {
       <Hero />
       
       {/* Partners Section */}
-      <div className="animate-fade-in-up">
-        <Partners />
-      </div>
+      <Partners />
 
       {/* About Section */}
-      <div className="animate-slide-in-left">
-        <About />
-      </div>
+      <About />
 
       {/* Map Section */}
-      <div className="animate-slide-in-right">
-        <Map />
-      </div>
+      <Map />
 
       {/* Footer Section */}
-      <div className="animate-fade-in-up">
-        <Footer />
-      </div>
+      <Footer />
       
       {/* <Blogs /> */}
     </>

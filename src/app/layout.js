@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono, Orbitron, Montserrat } from "next/font/google";
 import "./globals.css";
-import PageTransition from "./components/pageTransition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,9 +37,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${customFont.variable} ${montserrat.variable} antialiased`}
       >
-        <PageTransition>
-          {children}
-        </PageTransition>
+        {children}
       </body>
     </html>
   );

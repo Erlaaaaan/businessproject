@@ -79,7 +79,7 @@ export default function About() {
               : 'opacity-0 translate-y-10'
           }`}>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-montserrat break-words px-2">
-            We are a leading provider of integrated fire protection, gas systems, and security solutions in the Philippines.
+          We specialize in delivering integrated solutions – from fire protection and electrical systems to security, civil works and engineering services. With a focus on reliability, innovation, and compliance, we help protect people, property and communities through tailored systems designed to meet the unique needs of every project.
           </p>
           </div>
         </div>

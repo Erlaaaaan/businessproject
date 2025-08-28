@@ -491,7 +491,7 @@ export default function Services() {
                                        title: "Fire Protection Systems",
                                        description: "Complete fire detection, suppression, and prevention systems for commercial and residential buildings.",
                                        image: "/images/fire/fire1.png",
-                                       details: "Our comprehensive fire protection systems include advanced fire detection sensors, automatic suppression systems, and integrated alarm networks. We design and install complete solutions that meet all safety codes and regulations, ensuring maximum protection for your property and occupants."
+                                       details: "Complete fire detection, suppression, and prevention systems for commercial and residential buildings."
                                      })}
                                    >
                                      <div className="absolute inset-0 z-0">
