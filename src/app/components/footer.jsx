@@ -22,13 +22,15 @@ export default function Footer() {
             <div>
               {/* Logo */}
               <div className="mb-6">
-                <Image
-                  src="/images/logo.png"
-                  alt="RQUIN Logo"
-                  width={160}
-                  height={64}
-                  className="h-30 w-auto object-contain transition-all duration-500 hover:scale-110"
-                />
+                <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                  <Image
+                    src="/images/logo.png"
+                    alt="RQUIN Logo"
+                    width={160}
+                    height={64}
+                    className="h-30 w-auto object-contain transition-all duration-500 hover:scale-110 cursor-pointer"
+                  />
+                </Link>
               </div>
               
               {/* Company Description */}

@@ -9,8 +9,7 @@ export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
   const images = ["/images/fire.png", "/images/camera.jpg", "/images/gas.png"];
   
-  const heroText = "RQUIN Integrated Solutions Inc.";
-  const heroSubtitle = "Leading the way in Safety, Construction & Technology.";
+  const heroText = "Leading the way in Safety, Construction & Technology.";
   
   // Temporary test with SVG files to debug
   // const images = ["/next.svg", "/vercel.svg", "/file.svg"];
@@ -88,13 +87,19 @@ export default function Hero() {
             </h1>
           </div>
           
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-white mb-4 sm:mb-6 drop-shadow-[0_0_8px_rgba(0,0,0,0.8)] drop-shadow-[0_0_16px_rgba(0,0,0,0.6)] [text-shadow:_1px_1px_0_#000,_2px_2px_0_#000] font-montserrat transition-all duration-700 hover:text-blue-200 break-words">
-            {heroSubtitle}
-          </h2>
-          
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mb-6 sm:mb-8 opacity-90 font-montserrat transition-all duration-700 hover:opacity-100 hover:text-blue-100 leading-relaxed break-words px-2">
-            We specialize in delivering integrated solutions – from fire protection and electrical systems to security, civil works and engineering services. With a focus on reliability, innovation, and compliance, we help protect people, property and communities through tailored systems designed to meet the unique needs of every project.
+
           </p>
+          
+          {/* Quote Button */}
+          <div className="flex justify-center">
+            <Link href="/qoute">
+              <button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-bold py-4 px-8 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide text-lg flex items-center space-x-2">
+                <span className="text-2xl">🔥</span>
+                Get a Quote
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

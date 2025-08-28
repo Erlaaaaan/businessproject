@@ -3,8 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 
 export default function About() {
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [visibleElements, setVisibleElements] = useState({
     title: false,
     description: false,
@@ -14,27 +12,6 @@ export default function About() {
   });
   
   const aboutTitle = "About RQUIN Integrated Solutions Inc.";
-  
-  // Typing animation effect
-  useEffect(() => {
-    if (isTypingComplete) {
-      // Wait 3 seconds after typing is complete
-      const timer = setTimeout(() => {
-        setIsTypingComplete(false);
-        setCurrentTextIndex(0);
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-
-    if (currentTextIndex < aboutTitle.length) {
-      const timer = setTimeout(() => {
-        setCurrentTextIndex(prev => prev + 1);
-      }, 100); // Speed of typing
-      return () => clearTimeout(timer);
-    } else {
-      setIsTypingComplete(true);
-    }
-  }, [currentTextIndex, isTypingComplete, aboutTitle.length]);
 
   // Scroll-triggered animations
   useEffect(() => {
@@ -80,30 +57,6 @@ export default function About() {
         
         {/* Simple green accent line at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-green-500 to-blue-500"></div>
-        
-        {/* Geometric Shapes - Blue and Green */}
-        {/* Top Right - Blue Triangle */}
-        <div className="absolute top-20 right-20 w-0 h-0 border-l-[25px] border-l-transparent border-b-[43px] border-b-blue-400 opacity-20 animate-bounce delay-1000"></div>
-        
-        {/* Top Left - Green Square */}
-        <div className="absolute top-16 left-20 w-16 h-16 bg-green-400 opacity-20 rotate-45 animate-pulse delay-500"></div>
-        
-        {/* Middle Left - Blue Circle */}
-        <div className="absolute top-1/2 left-10 w-20 h-20 bg-blue-300 rounded-full opacity-15 animate-ping delay-2000"></div>
-        
-        {/* Middle Right - Green Triangle */}
-        <div className="absolute top-1/3 right-10 w-0 h-0 border-l-[20px] border-l-transparent border-b-[35px] border-b-green-400 opacity-20 animate-bounce delay-1500"></div>
-        
-        {/* Bottom Left - Blue Square */}
-        <div className="absolute bottom-20 left-16 w-12 h-12 bg-blue-400 opacity-20 rotate-45 animate-pulse delay-3000"></div>
-        
-        {/* Bottom Right - Green Circle */}
-        <div className="absolute bottom-16 right-16 w-16 h-16 bg-green-300 rounded-full opacity-15 animate-ping delay-1000"></div>
-        
-        {/* Additional small shapes for texture */}
-        <div className="absolute top-32 left-1/4 w-8 h-8 bg-blue-200 opacity-30 rotate-45 animate-spin delay-2000"></div>
-        <div className="absolute bottom-32 right-1/4 w-6 h-6 bg-green-200 opacity-25 rounded-full animate-pulse delay-2500"></div>
-        <div className="absolute top-40 right-1/3 w-10 h-10 bg-blue-200 opacity-20 rotate-45 animate-bounce delay-500"></div>
       </div>
 
       {/* Content */}
@@ -117,8 +70,7 @@ export default function About() {
           {/* Fixed height container to prevent auto-scroll */}
           <div className="h-32 sm:h-40 md:h-48 lg:h-56 flex items-center justify-center mb-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 font-montserrat transition-all duration-300 break-words">
-              {aboutTitle.slice(0, currentTextIndex)}
-              <span className="animate-pulse text-blue-600">|</span>
+              {aboutTitle}
             </h2>
           </div>
           <div className={`transition-all duration-1000 delay-500 ${
@@ -154,7 +106,7 @@ export default function About() {
                 ? 'opacity-100 translate-x-0 scale-100' 
                 : 'opacity-0 translate-x-20 scale-95'
             }`}>
-              <div className="bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl p-8 text-white shadow-lg border border-white/20 transition-all duration-500 hover:from-green-500 hover:to-blue-500 hover:scale-105">
+              <div className="bg-[#0d3c85] rounded-2xl p-8 text-white shadow-lg border border-white/20 transition-all duration-500 hover:bg-[#0a2f6b] hover:scale-105">
                 <h4 className="text-3xl font-bold mb-6 text-center font-montserrat transition-all duration-300">Our Numbers</h4>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center transition-all duration-300 hover:text-blue-200">
@@ -194,7 +146,7 @@ export default function About() {
           </div>
           
           <div className="bg-white border-2 border-green-100 p-8 rounded-lg shadow-sm transition-all duration-300 hover:border-green-300 hover:shadow-md group cursor-pointer">
-            <div className="text-green-600 mb-4 transition-all duration-300 group-hover:text-green-700">
+            <div className="text-blue-600 mb-4 transition-all duration-300 group-hover:text-blue-700">
               <svg className="w-12 h-12 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
