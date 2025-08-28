@@ -251,32 +251,32 @@ export default function Projects() {
         
         {/* Geometric Shapes - Blue and Green */}
         {/* Top Right - Blue Triangle */}
-        <div className="absolute top-20 right-20 w-0 h-0 border-l-[25px] border-l-transparent border-b-[43px] border-b-blue-400 opacity-20 animate-bounce delay-1000"></div>
+        <div className="absolute top-20 right-20 w-0 h-0 border-l-[25px] border-l-transparent border-b-[43px] border-b-blue-400 opacity-20"></div>
         
         {/* Top Left - Green Square */}
-        <div className="absolute top-16 left-20 w-16 h-16 bg-green-400 opacity-20 rotate-45 animate-pulse delay-500"></div>
+        <div className="absolute top-16 left-20 w-16 h-16 bg-green-400 opacity-20 rotate-45"></div>
         
         {/* Middle Left - Blue Circle */}
-        <div className="absolute top-1/2 left-10 w-20 h-20 bg-blue-300 rounded-full opacity-15 animate-ping delay-2000"></div>
+        <div className="absolute top-1/2 left-10 w-20 h-20 bg-blue-300 rounded-full opacity-15"></div>
         
         {/* Middle Right - Green Triangle */}
-        <div className="absolute top-1/3 right-10 w-0 h-0 border-l-[20px] border-l-transparent border-b-[35px] border-b-green-400 opacity-20 animate-bounce delay-1500"></div>
+        <div className="absolute top-1/3 right-10 w-0 h-0 border-l-[20px] border-l-transparent border-b-[35px] border-b-green-400 opacity-20"></div>
         
         {/* Bottom Left - Blue Square */}
-        <div className="absolute bottom-20 left-16 w-12 h-12 bg-blue-400 opacity-20 rotate-45 animate-pulse delay-3000"></div>
+        <div className="absolute bottom-20 left-16 w-12 h-12 bg-blue-400 opacity-20 rotate-45"></div>
         
         {/* Bottom Right - Green Circle */}
-        <div className="absolute bottom-16 right-16 w-16 h-16 bg-green-300 rounded-full opacity-15 animate-ping delay-1000"></div>
+        <div className="absolute bottom-16 right-16 w-16 h-16 bg-green-300 rounded-full opacity-15"></div>
         
         {/* Additional small shapes for texture */}
-        <div className="absolute top-32 left-1/4 w-8 h-8 bg-blue-200 opacity-30 rotate-45 animate-spin delay-2000"></div>
-        <div className="absolute bottom-32 right-1/4 w-6 h-6 bg-green-200 opacity-25 rounded-full animate-pulse delay-2500"></div>
-        <div className="absolute top-40 right-1/3 w-10 h-10 bg-blue-200 opacity-20 rotate-45 animate-bounce delay-500"></div>
+        <div className="absolute top-32 left-1/4 w-8 h-8 bg-blue-200 opacity-30 rotate-45"></div>
+        <div className="absolute bottom-32 right-1/4 w-6 h-6 bg-green-200 opacity-25 rounded-full"></div>
+        <div className="absolute top-40 right-1/3 w-10 h-10 bg-blue-200 opacity-20 rotate-45"></div>
         
         {/* More floating shapes */}
-        <div className="absolute top-1/4 left-1/6 w-6 h-6 bg-blue-200 opacity-25 rotate-90 animate-float-slow"></div>
-        <div className="absolute top-3/4 right-1/6 w-8 h-8 bg-green-200 opacity-20 rounded-full animate-float-medium"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-blue-300 opacity-30 rotate-45 animate-float-fast"></div>
+        <div className="absolute top-1/4 left-1/6 w-6 h-6 bg-blue-200 opacity-25 rotate-90"></div>
+        <div className="absolute top-3/4 right-1/6 w-8 h-8 bg-green-200 opacity-20 rounded-full"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-blue-300 opacity-30 rotate-45"></div>
       </div>
 
       {/* Interactive Geometric Overlay */}
