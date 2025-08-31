@@ -98,7 +98,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 mr-3 flex-shrink-0 shadow-sm"></div>
-                  <span className="text-gray-700 font-montserrat">24/7 support and maintenance services</span>
+                  <span className="text-gray-700 font-montserrat">Support and maintenance services</span>
                 </li>
               </ul>
             </div>

@@ -543,7 +543,7 @@ export default function Services() {
                                      className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                      onClick={() => openModal({
                                        title: "Emergency Response Systems",
-                                       description: "24/7 emergency monitoring and rapid response systems for critical situations.",
+                                       description: "Emergency monitoring and rapid response systems for critical situations.",
                                        image: "/images/fire/fire3.png",
                                        details: "Our emergency response systems provide round-the-clock monitoring and immediate response capabilities. We integrate advanced communication systems, automated alerts, and rapid response protocols to ensure the fastest possible reaction time during emergencies."
                                      })}
@@ -678,7 +678,7 @@ export default function Services() {
                                      className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 active:rotate-1 group h-80 cursor-pointer"
                                      onClick={() => openModal({
                                        title: "Emergency Fire Services",
-                                       description: "24/7 emergency fire response and professional fire safety consultation services.",
+                                       description: "Emergency fire response and professional fire safety consultation services.",
                                        image: "/images/fire/fire8.png",
                                        details: "Our emergency fire services provide round-the-clock response capabilities for fire emergencies. We offer immediate response, professional consultation, and emergency planning services to ensure your safety and compliance."
                                      })}
@@ -935,7 +935,7 @@ export default function Services() {
                                  title: "Proactive Maintenance & Support",
                                  description: "We offer comprehensive maintenance and support services designed to maximize system uptime and protect your investment.",
                                  image: "/images/IT/IT3.png",
-                                 details: "Preventive Maintenance:\n• Regular inspections, performance checks, cleaning, and firmware updates\n• Prevent downtime and extend system lifespan\n\nReactive Support:\n• We provide rapid response and expert troubleshooting for unexpected issues and system failures\n• On-site support available across the UAE\n\nRemote Monitoring:\n• Our 24/7 command center remotely monitors critical IT and security systems\n• Early detection of anomalies, potential threats, and performance issues\n\nSoftware Updates & Patch Management:\n• We ensure all systems run the latest software versions and security patches\n• Mitigate vulnerabilities\n\nHardware Repair & Replacement:\n• Prompt repair or replacement of faulty hardware components\n• Minimize service disruption\n\nData Backup & Recovery:\n• We implement robust backup solutions (on-premise, cloud, hybrid)\n• Disaster recovery plans to safeguard your critical data\n• Ensure business continuity\n\nSLA-Driven Support:\n• Flexible Service Level Agreements (SLAs) tailored to your business's urgency and budget requirements\n• Guaranteed response and resolution times"
+                                 details: "Preventive Maintenance:\n• Regular inspections, performance checks, cleaning, and firmware updates\n• Prevent downtime and extend system lifespan\n\nReactive Support:\n• We provide rapid response and expert troubleshooting for unexpected issues and system failures\n• On-site support available across the UAE\n\nRemote Monitoring:\n• Our command center remotely monitors critical IT and security systems\n• Early detection of anomalies, potential threats, and performance issues\n\nSoftware Updates & Patch Management:\n• We ensure all systems run the latest software versions and security patches\n• Mitigate vulnerabilities\n\nHardware Repair & Replacement:\n• Prompt repair or replacement of faulty hardware components\n• Minimize service disruption\n\nData Backup & Recovery:\n• We implement robust backup solutions (on-premise, cloud, hybrid)\n• Disaster recovery plans to safeguard your critical data\n• Ensure business continuity\n\nSLA-Driven Support:\n• Flexible Service Level Agreements (SLAs) tailored to your business's urgency and budget requirements\n• Guaranteed response and resolution times"
                                })}
                              >
                                <div className="absolute inset-0 z-0">
@@ -1339,7 +1339,7 @@ export default function Services() {
                     <svg className="w-5 h-5 mr-3 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-sm">24/7 Support</span>
+                    <span className="text-sm">Support</span>
                   </div>
                   <div className="flex items-center text-blue-700">
                     <svg className="w-5 h-5 mr-3 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

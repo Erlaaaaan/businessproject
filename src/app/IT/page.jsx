@@ -48,7 +48,7 @@ export default function ITSecurity() {
       id: 3,
       title: "Proactive Maintenance & Support",
       description: "Cybersecurity solutions and network infrastructure protection for businesses.",
-      details: "Our proactive maintenance and support services keep your IT and security systems operating at peak performance. We provide 24/7 technical support, regular system updates, cybersecurity monitoring, and preventive maintenance to ensure continuous protection and optimal system reliability.",
+      details: "Our proactive maintenance and support services keep your IT and security systems operating at peak performance. We provide technical support, regular system updates, cybersecurity monitoring, and preventive maintenance to ensure continuous protection and optimal system reliability.",
       category: "it",
       bgClass: "bg-gradient-to-br from-blue-600 to-indigo-500",
       image: "/images/IT/IT3.png"
