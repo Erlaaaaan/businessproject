@@ -24,96 +24,96 @@ export default function PeoplePage() {
       name: "Rizza Quinquileria",
       position: "Managing Director",
       image: "/images/people/rizza.jpg",
-      description: "Leads the company's strategic direction and oversees all operations. Responsible for business development, stakeholder relations, and ensuring organizational success and growth.",
-      extendedDescription: "As the Chief Executive Officer and President, this role encompasses comprehensive leadership responsibilities including strategic planning, corporate governance, stakeholder management, and driving organizational excellence. The position requires deep industry knowledge, strong leadership skills, and the ability to navigate complex business challenges while maintaining the company's vision and mission."
+      description: "The Managing Director of RQUIN Integrated Solution Inc. leads the company with a clear vision for growth, innovation, and client success.",
+      extendedDescription: "Responsible for overall strategy, operations, and partnerships, they ensure the organization delivers reliable and integrated business solutions. With a strong commitment to excellence and integrity, the Managing Director drives the team toward achieving long-term sustainability and industry leadership."
     },
     {
       id: 2,
       name: "Engr. Manuel Villafuerte",
       position: "Chief Operations Officer",
       image: "/images/people/manuela.jpg",
-      description: "Provides strategic guidance and oversight to the board. Supports the CEO in key decision-making and represents the company in high-level business relationships.",
-      extendedDescription: "The Vice-Chairman serves as a key strategic advisor to the board and executive team, providing oversight and guidance on major business decisions. This role involves representing the company in high-level negotiations, maintaining relationships with key stakeholders, and ensuring corporate governance standards are upheld. The position requires extensive business experience and strong analytical capabilities."
+      description: "The Chief Operations Officer of RQUIN Integrated Solution Inc. oversees the company’s daily operations and ensures that all projects and services are delivered efficiently and effectively.",
+      extendedDescription: "Focused on operational excellence and continuous improvement, the COO aligns processes with the company’s strategic goals. With strong leadership and problem-solving skills, the COO drives productivity, teamwork, and service quality to meet client expectations and sustain business growth."
     },
     {
       id: 3,
       name: "Charina Acunin",
       position: "Sales Director",
       image: "/images/team/dinah-barrete-morales.jpg",
-      description: "Manages day-to-day operations and ensures efficient business processes. Coordinates between departments and implements strategic initiatives to achieve operational excellence.",
-      extendedDescription: "As Chief Operating Officer and Executive Vice-President, this role is responsible for the overall operational efficiency of the organization. This includes overseeing daily operations, implementing strategic initiatives, managing cross-departmental coordination, and ensuring that all business processes align with organizational goals. The position requires strong operational expertise and the ability to drive continuous improvement."
+      description: "The Sales Director of RQUIN Integrated Solution Inc. leads the company’s sales strategy and business development initiatives.",
+      extendedDescription: "Focused on building strong client relationships and expanding market reach, the Sales Director drives revenue growth and ensures customer satisfaction. With expertise in sales leadership and market trends, they play a key role in positioning the company as a trusted provider of innovative and integrated solutions."
     },
     {
       id: 4,
       name: "John Arnie Quinquileria",
       position: "Director/Marketing Exectutives",
       image: "/images/people/john.jpg",
-      description: "Oversees financial planning, budgeting, and reporting. Manages financial risks and ensures compliance with financial regulations and standards.",
-      extendedDescription: "The Chief Financial Officer is responsible for all financial aspects of the organization, including financial planning and analysis, risk management, compliance, and investor relations. This role requires deep financial expertise, strong analytical skills, and the ability to provide strategic financial guidance to support business growth and sustainability."
+      description: "The Director and Marketing Executives of RQUIN Integrated Solution Inc. are responsible for promoting the company’s brand, services, and innovative solutions in the market.",  
+      extendedDescription: "They design and implement effective marketing strategies that strengthen client engagement, expand market presence, and support business growth. With creativity and market insight, they ensure that the company’s vision and values are communicated clearly to clients and partners."
     },
     {
       id: 5,
       name: "Engr. Jhon Dennis Muldong",
       position: "Director/Project Enginner",
       image: "/images/people/dennis.jpg",
-      description: "Manages HR policies, recruitment, and employee development. Ensures workplace compliance and fosters a positive organizational culture.",
-      extendedDescription: "This role encompasses comprehensive HR leadership including talent acquisition, employee development, performance management, and organizational culture. The position requires strong people management skills, knowledge of employment law, and the ability to create an inclusive and productive work environment that supports business objectives."
+      description: "The Director / Project Engineer of RQUIN Integrated Solution Inc. oversees the planning, execution, and completion of projects to ensure they meet client requirements, timelines, and quality standards.",
+      extendedDescription: "With strong technical expertise and leadership, they manage resources, coordinate teams, and provide innovative solutions to deliver successful results. Their role is vital in maintaining efficiency, safety, and excellence across all engineering and project operations."
     },
     {
       id: 6,
       name: "Wilfredo Balaguer",
       position: "Foreman - Fire Pro Department",
       image: "/images/team/edleen-ona.jpg",
-      description: "Oversees production processes and quality control. Optimizes operational efficiency and ensures timely delivery of products and services.",
-      extendedDescription: "The Chief Production Officer leads all aspects of production operations, including process optimization, quality assurance, supply chain management, and operational efficiency. This role requires strong operational expertise, quality management skills, and the ability to drive continuous improvement in production processes."
+      description: "The Foreman of the Fire Protection Department at RQUIN Integrated Solution Inc. is responsible for supervising on-site installations, maintenance, and safety compliance of fire protection systems.",
+      extendedDescription: "They lead and coordinate the work of technicians and crews to ensure projects are completed on time, within standards, and in line with safety regulations. With hands-on expertise and leadership, the Foreman plays a key role in delivering reliable and high-quality fire protection solutions to clients."
     },
     {
       id: 7,
       name: "Noe Derit",
       position: "Pipe Fitter",
       image: "/images/team/alexander-cabrera.jpg",
-      description: "Provides strategic counsel and industry expertise. Offers guidance on business decisions and helps navigate complex challenges.",
-      extendedDescription: "As a strategic advisor, this role provides expert counsel on business strategy, industry trends, and complex business challenges. The position requires extensive industry experience, strong analytical capabilities, and the ability to provide actionable insights that support strategic decision-making and business growth."
+      description: "The Pipe Fitter at RQUIN Integrated Solution Inc. is skilled in assembling, installing, and maintaining piping systems for various projects.",
+      extendedDescription: "With technical expertise and attention to detail, they ensure that all pipework is fitted accurately, safely, and according to design specifications. Their role is essential in supporting efficient project completion and maintaining the company’s commitment to quality workmanship. ",
     },
     {
       id: 8,
       name: "Elmer Bautista",
       position: "Pipe Fitter",
       image: "/images/team/donabel-samson-garces.jpg",
-      description: "Leads customer service operations and data management. Ensures high-quality customer support and accurate data processing and maintenance.",
-      extendedDescription: "This role manages both customer service excellence and data integrity, ensuring that customer interactions are handled professionally while maintaining accurate and reliable data systems. The position requires strong leadership skills, customer service expertise, and the ability to balance operational efficiency with quality standards."
+      description: "The Pipe Fitter at RQUIN Integrated Solution Inc. is skilled in assembling, installing, and maintaining piping systems for various projects.",
+      extendedDescription: "With technical expertise and attention to detail, they ensure that all pipework is fitted accurately, safely, and according to design specifications. Their role is essential in supporting efficient project completion and maintaining the company’s commitment to quality workmanship."
     },
     {
       id: 9,
       name: "Jayson Quimbao",
       position: "Foreman - FDAS Department",
       image: "/images/people/jason.jpg",
-      description: "Manages document review processes and quality assurance. Ensures accuracy and compliance in record management and verification procedures.",
-      extendedDescription: "This role oversees critical document review processes, ensuring accuracy, compliance, and quality in all record management activities. The position requires strong attention to detail, knowledge of compliance requirements, and the ability to implement effective quality control measures."
+      description: "The Foreman of the FDAS Department at RQUIN Integrated Solution Inc. oversees the installation, testing, and maintenance of fire detection and alarm systems.",
+      extendedDescription: "They lead and coordinate technicians on-site, ensuring that all systems are compliant with safety standards and project requirements. With strong technical knowledge and leadership, the Foreman ensures reliable, high-quality, and safe FDAS solutions for clients."
     },
     {
       id: 10,
       name: "Benjie De Villa",
       position: "FDAS Technician",
       image: "/images/people/benji.jpg",
-      description: "Oversees audio and video transcription services. Ensures high-quality, accurate transcriptions and manages transcription workflow and quality control.",
-      extendedDescription: "This role manages comprehensive transcription services, ensuring high accuracy and quality in all transcription deliverables. The position requires strong quality management skills, knowledge of transcription standards, and the ability to optimize workflow processes for maximum efficiency and accuracy."
+      description: "The FDAS Technician at RQUIN Integrated Solution Inc. is responsible for installing, testing, and maintaining fire detection and alarm systems.",
+      extendedDescription: "With technical skills and attention to detail, they ensure all devices and systems function accurately and comply with safety standards. Their work is essential in supporting reliable fire safety solutions and protecting clients’ facilities.",
     },
     {
       id: 11,
       name: "Paul De Leon",
       position: "FDAS Technician",
       image: "/images/team/hazel-marie-yadao.jpg",
-      description: "Supports record review operations and quality control. Assists in managing review processes and ensuring accuracy in document verification.",
-      extendedDescription: "This role provides essential support to record review operations, assisting in quality control and process management. The position requires strong organizational skills, attention to detail, and the ability to support efficient review processes while maintaining quality standards."
+      description: "The FDAS Technician at RQUIN Integrated Solution Inc. is responsible for installing, testing, and maintaining fire detection and alarm systems.",
+      extendedDescription: "With technical skills and attention to detail, they ensure all devices and systems function accurately and comply with safety standards. Their work is essential in supporting reliable fire safety solutions and protecting clients’ facilities."
     },
     {
       id: 12,
       name: "Shiela Cordero",
       position: "Admin Assistant",
       image: "/images/team/christian-morales.jpg",
-      description: "Supports virtual assistant operations and client services. Assists in managing virtual support teams and ensuring high-quality client assistance.",
-      extendedDescription: "This role supports virtual assistant operations, ensuring high-quality client service delivery. The position requires strong communication skills, client service expertise, and the ability to support efficient virtual operations while maintaining service quality standards."
+      description: "The Admin Assistant at RQUIN Integrated Solution Inc. provides essential administrative and clerical support to ensure smooth daily operations.",
+      extendedDescription: "They handle documentation, scheduling, and coordination tasks that keep projects and teams organized. With strong attention to detail and efficiency, the Admin Assistant plays a key role in supporting both management and staff."
     },
    
   ];
