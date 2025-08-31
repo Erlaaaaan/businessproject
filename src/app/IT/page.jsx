@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -140,9 +141,9 @@ export default function ITSecurity() {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Get a comprehensive IT and security assessment for your business or facility.
           </p>
-          <button className="bg-[#0a810d] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#086a0a] transition-all duration-300 transform hover:scale-105 font-montserrat">
+          <Link href="/qoute" className="inline-block bg-[#0a810d] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#086a0a] transition-all duration-300 transform hover:scale-105 font-montserrat">
             Get IT Security Quote
-          </button>
+          </Link>
         </div>
       </section>
 

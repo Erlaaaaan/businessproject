@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
 export default function CivilWorks() {
-
+  const router = useRouter();
   const [selectedService, setSelectedService] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -23,6 +24,10 @@ export default function CivilWorks() {
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedService(null);
+  };
+
+  const handleQuoteClick = () => {
+    router.push('/qoute');
   };
 
   const civilServices = [
@@ -149,7 +154,10 @@ export default function CivilWorks() {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Get a comprehensive civil works and engineering assessment for your construction project.
           </p>
-          <button className="bg-[#0a810d] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#086a0a] transition-all duration-300 transform hover:scale-105 font-montserrat">
+          <button 
+            onClick={handleQuoteClick}
+            className="bg-[#0a810d] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#086a0a] transition-all duration-300 transform hover:scale-105 font-montserrat"
+          >
             Get Construction Quote
           </button>
         </div>
