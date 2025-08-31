@@ -38,8 +38,8 @@ export default function ITSecurity() {
     {
       id: 2,
       title: "Professional Installation & Integration",
-      description: "Our certified technicians ensure seamless and efficient installation of all hardware and software components, adhering to international best practices and local regulations across all Emirates.",
-      details: "• Expert Deployment: We ensure flawless execution of installations and threat response\n\n• System Integration: We specialize in creating unified, centrally managed IT and security infrastructures\n  • Seamlessly integrating diverse systems, enhancing operational efficiency across all Emirates\n\n• Customized Solutions: We design and implement solutions tailored to your specific operational needs\n  • Facility layout and regulatory requirements in Abu Dhabi, Dubai, and other Emirates\n\n• Network Cabling & Infrastructure: We provide professional structured cabling services for optimal network performance\n  • Reliability and scalability\n\n• Configuration & Testing: Thorough configuration and rigorous testing\n  • Including vulnerability assessments and penetration testing (for IT security)\n  • Ensure all systems are functional, secure, and performing optimally",
+      description: "Our certified technicians ensure seamless and efficient installation of all hardware and software components, adhering to national best practices and local regulations across all Philppines",
+      details: "Expert Deployment: We ensure flawless execution of installations and threat response, System Integration: We specialize in creating unified, centrally managed IT and security infrastructures, Seamlessly integrating diverse systems, enhancing operational efficiency across all the Philippines, Customized Solutions: We design and implement solutions tailored to your specific operational needs, Facility layout and regulatory requirements in Philippines Network Cabling & Infrastructure: We provide professional structured cabling services for optimal network performance, Reliability and scalability, Configuration & Testing: Thorough configuration and rigorous testing, Including vulnerability assessments and penetration testing (for IT security), Ensure all systems are functional, secure, and performing optimally",
       category: "it",
       bgClass: "bg-gradient-to-br from-blue-700 to-purple-600",
       image: "/images/IT/IT2.png"
@@ -92,7 +92,7 @@ export default function ITSecurity() {
               Our IT & Security Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              From surveillance systems to network security, we provide comprehensive IT and security RQUIN is a leading provider of integrated IT and security system solutions serving Abu Dhabi, Dubai, and across the entire United Arab Emirates. We offer a full spectrum of services from initial consultation and system design to professional installation, ongoing maintenance, and reliable supply of cutting-edge equipment. We are committed to empowering businesses throughout the UAE with robust, secure, and efficient technological infrastructures that protect assets, optimize operations, and ensure business continuity..
+            From surveillance systems to network security, we provide comprehensive IT and security RQUIN is a leading provider of integrated IT and security system solutions serving the entire Philippines. We offer a full spectrum of services from initial consultation and system design to professional installation, ongoing maintenance, and reliable supply of cutting-edge equipment. We are committed to empowering businesses throughout the Philippines with robust, secure, and efficient technological infrastructures that protect assets, optimize operations, and ensure business continuity.
             </p>
           </div>
 
@@ -203,7 +203,7 @@ export default function ITSecurity() {
                     <svg className="w-5 h-5 mr-3 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-sm">24/7 Support</span>
+                    <span className="text-sm">Support</span>
                   </div>
                   <div className="flex items-center text-blue-700">
                     <svg className="w-5 h-5 mr-3 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
