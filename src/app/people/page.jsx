@@ -24,8 +24,8 @@ export default function PeoplePage() {
       name: "Rizza Quinquileria",
       position: "Managing Director",
       image: "/images/people/rizza.jpg",
-      description: "The Managing Director of RQUIN Integrated Solution Inc. leads the company with a clear vision for growth, innovation, and client success.",
-      extendedDescription: "Responsible for overall strategy, operations, and partnerships, they ensure the organization delivers reliable and integrated business solutions. With a strong commitment to excellence and integrity, the Managing Director drives the team toward achieving long-term sustainability and industry leadership."
+      description: "With an impressive 30-year career in finance, Rizza Quinquileria has built a reputation for financial leadership, strategic decision-making, and organizational growth. Her extensive background covers corporate finance, budgeting, and compliance—skills that have consistently driven stability and profitability in every organization she has served.",
+      extendedDescription: "In the past 5 years, Rizza has taken the helm of RQUIN Integrated Solutions Inc. as managing director, where she has successfully merged her financial expertise with hands-on operational leadership. Under her direction, RQUIN has expanded its capabilities in fire and safety, engineering, and integrated solutions, establishing itself as a trusted partner for clients in both the public and private sectors. Rizza’s leadership style combines strategic vision, financial discipline, and operational excellence, ensuring that RQUIN remains true to its mission: “Your Safety, Our Mission.”"
     },
     {
       id: 2,
@@ -49,15 +49,15 @@ export default function PeoplePage() {
       position: "Director/Marketing Exectutives",
       image: "/images/people/john.jpg",
       description: "The Director and Marketing Executives of RQUIN Integrated Solution Inc. are responsible for promoting the company’s brand, services, and innovative solutions in the market.",  
-      extendedDescription: "They design and implement effective marketing strategies that strengthen client engagement, expand market presence, and support business growth. With creativity and market insight, they ensure that the company’s vision and values are communicated clearly to clients and partners."
+      extendedDescription: "As Director and Marketing at RQUIN Integrated Solutions Inc., John Arnie Quinquileria leads the company’s efforts in brand building, client acquisition, and market expansion. With a strong background in real estate consulting in Dubai and years of entrepreneurial experience across multiple ventures, John brings a strategic and innovative approach to positioning RQUIN as a trusted leader in fire safety and integrated engineering solutions."
     },
     {
       id: 5,
       name: "Engr. Jhon Dennis Muldong",
       position: "Director/Project Enginner",
       image: "/images/people/dennis.jpg",
-      description: "The Director / Project Engineer of RQUIN Integrated Solution Inc. oversees the planning, execution, and completion of projects to ensure they meet client requirements, timelines, and quality standards.",
-      extendedDescription: "With strong technical expertise and leadership, they manage resources, coordinate teams, and provide innovative solutions to deliver successful results. Their role is vital in maintaining efficiency, safety, and excellence across all engineering and project operations."
+      description: "Dennis Muldong is a Licensed Mechanical Engineer with extensive experience in both local and international projects. Based in Dubai and actively involved in RQUIN’s operations in the Philippines, Dennis bridges global exposure with hands-on project execution.",
+      extendedDescription: "With a strong technical foundation, Dennis specializes in IT infrastructure and security systems integration, ensuring that RQUIN delivers cutting-edge solutions that meet the evolving demands of safety and engineering projects. His dual expertise in mechanical systems and advanced security technologies makes him a vital asset in delivering end-to-end solutions for clients."
     },
     {
       id: 6,
