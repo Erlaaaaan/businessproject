@@ -23,7 +23,7 @@ export default function PeoplePage() {
       id: 1,
       name: "Rizza Quinquileria",
       position: "Managing Director",
-      image: "/images/people/rizz.jpg",
+      image: "/images/people/rizza.jpg",
       description: "Leads the company's strategic direction and oversees all operations. Responsible for business development, stakeholder relations, and ensuring organizational success and growth.",
       extendedDescription: "As the Chief Executive Officer and President, this role encompasses comprehensive leadership responsibilities including strategic planning, corporate governance, stakeholder management, and driving organizational excellence. The position requires deep industry knowledge, strong leadership skills, and the ability to navigate complex business challenges while maintaining the company's vision and mission."
     },
@@ -31,7 +31,7 @@ export default function PeoplePage() {
       id: 2,
       name: "Engr. Manuel Villafuerte",
       position: "Chief Operations Officer",
-      image: "/images/people/manuel.jpg",
+      image: "/images/people/manuela.jpg",
       description: "Provides strategic guidance and oversight to the board. Supports the CEO in key decision-making and represents the company in high-level business relationships.",
       extendedDescription: "The Vice-Chairman serves as a key strategic advisor to the board and executive team, providing oversight and guidance on major business decisions. This role involves representing the company in high-level negotiations, maintaining relationships with key stakeholders, and ensuring corporate governance standards are upheld. The position requires extensive business experience and strong analytical capabilities."
     },
@@ -55,7 +55,7 @@ export default function PeoplePage() {
       id: 5,
       name: "Engr. Jhon Dennis Muldong",
       position: "Director/Project Enginner",
-      image: "/images/people/denis.jpg",
+      image: "/images/people/dennis.jpg",
       description: "Manages HR policies, recruitment, and employee development. Ensures workplace compliance and fosters a positive organizational culture.",
       extendedDescription: "This role encompasses comprehensive HR leadership including talent acquisition, employee development, performance management, and organizational culture. The position requires strong people management skills, knowledge of employment law, and the ability to create an inclusive and productive work environment that supports business objectives."
     },
@@ -87,7 +87,7 @@ export default function PeoplePage() {
       id: 9,
       name: "Jayson Quimbao",
       position: "Foreman - FDAS Department",
-      image: "/images/people/jayson.jpg",
+      image: "/images/people/jason.jpg",
       description: "Manages document review processes and quality assurance. Ensures accuracy and compliance in record management and verification procedures.",
       extendedDescription: "This role oversees critical document review processes, ensuring accuracy, compliance, and quality in all record management activities. The position requires strong attention to detail, knowledge of compliance requirements, and the ability to implement effective quality control measures."
     },
@@ -95,7 +95,7 @@ export default function PeoplePage() {
       id: 10,
       name: "Benjie De Villa",
       position: "FDAS Technician",
-      image: "/images/people/benjie.jpg",
+      image: "/images/people/benji.jpg",
       description: "Oversees audio and video transcription services. Ensures high-quality, accurate transcriptions and manages transcription workflow and quality control.",
       extendedDescription: "This role manages comprehensive transcription services, ensuring high accuracy and quality in all transcription deliverables. The position requires strong quality management skills, knowledge of transcription standards, and the ability to optimize workflow processes for maximum efficiency and accuracy."
     },
