@@ -87,7 +87,7 @@ export default function PeoplePage() {
       id: 9,
       name: "Jayson Quimbao",
       position: "Foreman - FDAS Department",
-      image: "/images/people/jason.jpg",
+      image: "/images/people/Jayson.jpg",
       description: "The Foreman of the FDAS Department at RQUIN Integrated Solution Inc. oversees the installation, testing, and maintenance of fire detection and alarm systems.",
       extendedDescription: "They lead and coordinate technicians on-site, ensuring that all systems are compliant with safety standards and project requirements. With strong technical knowledge and leadership, the Foreman ensures reliable, high-quality, and safe FDAS solutions for clients."
     },
@@ -95,7 +95,7 @@ export default function PeoplePage() {
       id: 10,
       name: "Benjie De Villa",
       position: "FDAS Technician",
-      image: "/images/people/benji.jpg",
+      image: "/images/people/Benjie.jpg",
       description: "The FDAS Technician at RQUIN Integrated Solution Inc. is responsible for installing, testing, and maintaining fire detection and alarm systems.",
       extendedDescription: "With technical skills and attention to detail, they ensure all devices and systems function accurately and comply with safety standards. Their work is essential in supporting reliable fire safety solutions and protecting clients’ facilities.",
     },
