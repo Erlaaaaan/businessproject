@@ -191,21 +191,21 @@ export default function PeoplePage() {
             {/* Employee Modal */}
       {isModalOpen && selectedEmployee && (
         <div 
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-2 sm:p-4"
           onClick={closeModal}
         >
           <div 
-            className="bg-gray-800/90 backdrop-blur-md rounded-lg max-w-4xl w-[90vw] border border-gray-600 shadow-2xl"
+            className="bg-gray-800/90 backdrop-blur-md rounded-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto border border-gray-600 shadow-2xl mx-4"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="p-8">
+            <div className="p-4 sm:p-6 lg:p-8">
               {/* Modal Header */}
-              <div className="mb-8">
-                <h2 className="text-3xl font-bold text-white drop-shadow-lg text-center">{selectedEmployee.name}</h2>
+              <div className="mb-4 sm:mb-6 lg:mb-8">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white drop-shadow-lg text-center leading-tight">{selectedEmployee.name}</h2>
               </div>
 
               {/* Employee Image */}
-              <div className="w-64 h-64 mx-auto mb-8 overflow-hidden bg-gray-700 rounded-lg border border-gray-600">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 mx-auto mb-4 sm:mb-6 lg:mb-8 overflow-hidden bg-gray-700 rounded-lg border border-gray-600">
                 <img 
                   src={selectedEmployee.image} 
                   alt={selectedEmployee.name}
@@ -215,20 +215,20 @@ export default function PeoplePage() {
                     e.target.nextSibling.style.display = 'flex';
                   }}
                 />
-                <div className="w-full h-full flex items-center justify-center text-gray-300 text-lg" style={{display: 'none'}}>
+                <div className="w-full h-full flex items-center justify-center text-gray-300 text-sm sm:text-base lg:text-lg" style={{display: 'none'}}>
                   Photo Coming Soon
                 </div>
               </div>
 
               {/* Employee Details */}
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-white mb-3 drop-shadow-lg">{selectedEmployee.position}</h3>
-                <div className="w-32 h-1 bg-cyan-400 mx-auto drop-shadow-lg"></div>
+              <div className="text-center mb-4 sm:mb-6 lg:mb-8">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white mb-2 sm:mb-3 drop-shadow-lg">{selectedEmployee.position}</h3>
+                <div className="w-24 sm:w-28 lg:w-32 h-1 bg-cyan-400 mx-auto drop-shadow-lg"></div>
               </div>
 
               {/* Extended Description */}
-              <div className="text-gray-200 leading-relaxed text-lg">
-                <p className="mb-6">{selectedEmployee.description}</p>
+              <div className="text-gray-200 leading-relaxed text-sm sm:text-base lg:text-lg">
+                <p className="mb-4 sm:mb-6">{selectedEmployee.description}</p>
                 <p>{selectedEmployee.extendedDescription}</p>
               </div>
             </div>
