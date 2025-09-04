@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { db } from "../../firebaseConfig/firebase";
 import { collection, addDoc } from "firebase/firestore";    
+import Partners from "../components/partners";
 
 export default function QuotePage() {
   const [formData, setFormData] = useState({
@@ -93,6 +94,9 @@ export default function QuotePage() {
           </div>
         </div>
       </div>
+
+
+
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
@@ -279,6 +283,8 @@ ALABANG,<br />CITY OF MUNTINLUPA</span>
           </div>
         </div>
       </div>
+      {/* Partners Section */}
+<Partners />
       <Footer />
     </div>
   );
