@@ -46,9 +46,9 @@ export default function PeoplePage() {
     {
       id: 4,
       name: "John Arnie Quinquileria",
-      position: "Director/Marketing Exectutives",
+      position: "Marketing Executive ",
       image: "/images/people/john.jpg",
-      description: "The Director and Marketing Executives of RQUIN Integrated Solution Inc. are responsible for promoting the company’s brand, services, and innovative solutions in the market.",  
+      description: "The Marketing Executive of RQUIN Integrated Solution Inc. are responsible for promoting the company’s brand, services, and innovative solutions in the market.",  
       extendedDescription: "As Director and Marketing at RQUIN Integrated Solutions Inc., John Arnie Quinquileria leads the company’s efforts in brand building, client acquisition, and market expansion. With a strong background in real estate consulting in Dubai and years of entrepreneurial experience across multiple ventures, John brings a strategic and innovative approach to positioning RQUIN as a trusted leader in fire safety and integrated engineering solutions."
     },
     {
@@ -62,18 +62,18 @@ export default function PeoplePage() {
     {
       id: 6,
       name: "Wilfredo Balaguer",
-      position: "Foreman - Fire Pro Department",
+      position: "Foreman",
       image: "/images/team/edleen-ona.jpg",
-      description: "The Foreman of the Fire Protection Department at RQUIN Integrated Solution Inc. is responsible for supervising on-site installations, maintenance, and safety compliance of fire protection systems.",
+      description: "The Foreman is responsible for supervising and coordinating the daily activities of workers at the project site. He ensures that all tasks are carried out according to plans, safety regulations, and company standards, while meeting deadlines and maintaining quality workmanship.",
       extendedDescription: "They lead and coordinate the work of technicians and crews to ensure projects are completed on time, within standards, and in line with safety regulations. With hands-on expertise and leadership, the Foreman plays a key role in delivering reliable and high-quality fire protection solutions to clients."
     },
     {
       id: 7,
       name: "Noe Derit",
-      position: "Pipe Fitter",
+      position: "Welder",
       image: "/images/team/alexander-cabrera.jpg",
       description: "The Pipe Fitter at RQUIN Integrated Solution Inc. is skilled in assembling, installing, and maintaining piping systems for various projects.",
-      extendedDescription: "With technical expertise and attention to detail, they ensure that all pipework is fitted accurately, safely, and according to design specifications. Their role is essential in supporting efficient project completion and maintaining the company’s commitment to quality workmanship. ",
+      extendedDescription: "The Welder is responsible for performing welding and fabrication work at the project site. This includes joining, repairing, and assembling metal components according to specifications, ensuring safety, quality, and accuracy in every task. ",
     },
     {
       id: 8,
@@ -81,31 +81,31 @@ export default function PeoplePage() {
       position: "Pipe Fitter",
       image: "/images/team/donabel-samson-garces.jpg",
       description: "The Pipe Fitter at RQUIN Integrated Solution Inc. is skilled in assembling, installing, and maintaining piping systems for various projects.",
-      extendedDescription: "With technical expertise and attention to detail, they ensure that all pipework is fitted accurately, safely, and according to design specifications. Their role is essential in supporting efficient project completion and maintaining the company’s commitment to quality workmanship."
+      extendedDescription: "The Pipe Fitter is responsible for installing, assembling, fabricating, maintaining, and repairing piping systems at the project site. The role ensures that all pipes and fittings are aligned, secured, and tested according to specifications, safety standards, and project requirements."
     },
     {
       id: 9,
       name: "Jayson Quimbao",
-      position: "Foreman - FDAS Department",
+      position: "Pipe Fitter",
       image: "/images/people/Jayson.jpg",
-      description: "The Foreman of the FDAS Department at RQUIN Integrated Solution Inc. oversees the installation, testing, and maintenance of fire detection and alarm systems.",
-      extendedDescription: "They lead and coordinate technicians on-site, ensuring that all systems are compliant with safety standards and project requirements. With strong technical knowledge and leadership, the Foreman ensures reliable, high-quality, and safe FDAS solutions for clients."
+      description: "Read and interpret blueprints, drawings, and project specifications for pipe system layouts. ",
+      extendedDescription: "Measure, cut, thread, bend, and fit pipes using appropriate tools and techniques. Install pipes, fittings, valves, and supports securely according to plans. Test piping systems for leaks, pressure, and safety compliance."
     },
     {
       id: 10,
-      name: "Benjie De Villa",
-      position: "FDAS Technician",
+      name: "Benjie Dadivas",
+      position: "Technician",
       image: "/images/people/Benjie.jpg",
       description: "The FDAS Technician at RQUIN Integrated Solution Inc. is responsible for installing, testing, and maintaining fire detection and alarm systems.",
-      extendedDescription: "With technical skills and attention to detail, they ensure all devices and systems function accurately and comply with safety standards. Their work is essential in supporting reliable fire safety solutions and protecting clients’ facilities.",
+      extendedDescription: "The Onsite Technician is responsible for installing, maintaining, and troubleshooting equipment, systems, or devices at the project location. The role ensures that all technical work is completed efficiently, safely, and in compliance with company and client standards.",
     },
     {
       id: 11,
       name: "Paul De Leon",
-      position: "FDAS Technician",
+      position: "Helper",
       image: "/images/team/hazel-marie-yadao.jpg",
-      description: "The FDAS Technician at RQUIN Integrated Solution Inc. is responsible for installing, testing, and maintaining fire detection and alarm systems.",
-      extendedDescription: "With technical skills and attention to detail, they ensure all devices and systems function accurately and comply with safety standards. Their work is essential in supporting reliable fire safety solutions and protecting clients’ facilities."
+      description: "Assist lead technicians/installers in onsite installation work (e.g., electrical, cabling, equipment, fixtures, or appliances).",
+      extendedDescription: "Carry and prepare materials, tools, and equipment required for the job. Support in setting up work areas and ensuring cleanliness and orderlines."
     },
     {
       id: 12,
@@ -115,7 +115,22 @@ export default function PeoplePage() {
       description: "The Admin Assistant at RQUIN Integrated Solution Inc. provides essential administrative and clerical support to ensure smooth daily operations.",
       extendedDescription: "They handle documentation, scheduling, and coordination tasks that keep projects and teams organized. With strong attention to detail and efficiency, the Admin Assistant plays a key role in supporting both management and staff."
     },
-   
+    {
+      id: 13,
+      name: "Ruel Magnaye ",
+      position: "Welder",
+      image: "/images/team/christian-morales.jpg",
+      description: "Perform welding and cutting tasks required for onsite installation of structures, equipment, or fittings.",
+      extendedDescription: "Assist in assembling and installing metal components according to project specifications. Read and interpret technical drawings, blueprints, and work instructions."
+    },
+    {
+      id: 14,
+      name: "Bryan De Leon",
+      position: "Helper",
+      image: "/images/team/christian-morales.jpg",
+      description: "Perform welding and cutting tasks required for onsite installation of structures, equipment, or fittings.",
+      extendedDescription: "Perform basic manual labor such as lifting, holding, or positioning materials.Ensure cleanliness and orderliness of the work area.Follow safety protocols and company policies at all times.Support the team in any other task assigned by the supervisor or foreman."
+    }
   ];
 
   return (
