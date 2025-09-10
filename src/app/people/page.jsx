@@ -106,7 +106,7 @@ export default function PeoplePage() {
       id: 11,
       name: "Paul De Leon",
       position: "Helper",
-      image: "/images/team/hazel-marie-yadao.jpg",
+      image: "/images/people/paul.jpg",
       description: "Assist lead technicians/installers in onsite installation work (e.g., electrical, cabling, equipment, fixtures, or appliances).",
       extendedDescription: "Carry and prepare materials, tools, and equipment required for the job. Support in setting up work areas and ensuring cleanliness and orderlines."
     },
