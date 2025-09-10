@@ -63,7 +63,7 @@ export default function PeoplePage() {
       id: 6,
       name: "Wilfredo Balaguer",
       position: "Foreman - Fire Pro Department",
-      image: "/images/team/wolf.jpg",
+      image: "/images/people/wolf.jpg",
       description: "The Foreman of the Fire Protection Department at RQUIN Integrated Solution Inc. is responsible for supervising on-site installations, maintenance, and safety compliance of fire protection systems.",
       position: "Foreman",
       image: "/images/team/edleen-ona.jpg",
