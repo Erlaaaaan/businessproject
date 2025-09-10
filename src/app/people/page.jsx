@@ -46,9 +46,9 @@ export default function PeoplePage() {
     {
       id: 4,
       name: "John Arnie Quinquileria",
-      position: "Director/Marketing Exectutives",
+      position: "Marketing Executive ",
       image: "/images/people/john.jpg",
-      description: "The Director and Marketing Executives of RQUIN Integrated Solution Inc. are responsible for promoting the company’s brand, services, and innovative solutions in the market.",  
+      description: "The Marketing Executive of RQUIN Integrated Solution Inc. are responsible for promoting the company’s brand, services, and innovative solutions in the market.",  
       extendedDescription: "As Director and Marketing at RQUIN Integrated Solutions Inc., John Arnie Quinquileria leads the company’s efforts in brand building, client acquisition, and market expansion. With a strong background in real estate consulting in Dubai and years of entrepreneurial experience across multiple ventures, John brings a strategic and innovative approach to positioning RQUIN as a trusted leader in fire safety and integrated engineering solutions."
     },
     {
@@ -65,15 +65,18 @@ export default function PeoplePage() {
       position: "Foreman - Fire Pro Department",
       image: "/images/team/wolf.jpg",
       description: "The Foreman of the Fire Protection Department at RQUIN Integrated Solution Inc. is responsible for supervising on-site installations, maintenance, and safety compliance of fire protection systems.",
+      position: "Foreman",
+      image: "/images/team/edleen-ona.jpg",
+      description: "The Foreman is responsible for supervising and coordinating the daily activities of workers at the project site. He ensures that all tasks are carried out according to plans, safety regulations, and company standards, while meeting deadlines and maintaining quality workmanship.",
       extendedDescription: "They lead and coordinate the work of technicians and crews to ensure projects are completed on time, within standards, and in line with safety regulations. With hands-on expertise and leadership, the Foreman plays a key role in delivering reliable and high-quality fire protection solutions to clients."
     },
     {
       id: 7,
       name: "Noe Derit",
-      position: "Pipe Fitter",
+      position: "Welder",
       image: "/images/team/alexander-cabrera.jpg",
       description: "The Pipe Fitter at RQUIN Integrated Solution Inc. is skilled in assembling, installing, and maintaining piping systems for various projects.",
-      extendedDescription: "With technical expertise and attention to detail, they ensure that all pipework is fitted accurately, safely, and according to design specifications. Their role is essential in supporting efficient project completion and maintaining the company’s commitment to quality workmanship. ",
+      extendedDescription: "The Welder is responsible for performing welding and fabrication work at the project site. This includes joining, repairing, and assembling metal components according to specifications, ensuring safety, quality, and accuracy in every task. ",
     },
     {
       id: 8,
@@ -81,31 +84,31 @@ export default function PeoplePage() {
       position: "Pipe Fitter",
       image: "/images/team/donabel-samson-garces.jpg",
       description: "The Pipe Fitter at RQUIN Integrated Solution Inc. is skilled in assembling, installing, and maintaining piping systems for various projects.",
-      extendedDescription: "With technical expertise and attention to detail, they ensure that all pipework is fitted accurately, safely, and according to design specifications. Their role is essential in supporting efficient project completion and maintaining the company’s commitment to quality workmanship."
+      extendedDescription: "The Pipe Fitter is responsible for installing, assembling, fabricating, maintaining, and repairing piping systems at the project site. The role ensures that all pipes and fittings are aligned, secured, and tested according to specifications, safety standards, and project requirements."
     },
     {
       id: 9,
       name: "Jayson Quimbao",
-      position: "Foreman - FDAS Department",
+      position: "Pipe Fitter",
       image: "/images/people/Jayson.jpg",
-      description: "The Foreman of the FDAS Department at RQUIN Integrated Solution Inc. oversees the installation, testing, and maintenance of fire detection and alarm systems.",
-      extendedDescription: "They lead and coordinate technicians on-site, ensuring that all systems are compliant with safety standards and project requirements. With strong technical knowledge and leadership, the Foreman ensures reliable, high-quality, and safe FDAS solutions for clients."
+      description: "Read and interpret blueprints, drawings, and project specifications for pipe system layouts. ",
+      extendedDescription: "Measure, cut, thread, bend, and fit pipes using appropriate tools and techniques. Install pipes, fittings, valves, and supports securely according to plans. Test piping systems for leaks, pressure, and safety compliance."
     },
     {
       id: 10,
-      name: "Benjie De Villa",
-      position: "FDAS Technician",
+      name: "Benjie Dadivas",
+      position: "Technician",
       image: "/images/people/Benjie.jpg",
       description: "The FDAS Technician at RQUIN Integrated Solution Inc. is responsible for installing, testing, and maintaining fire detection and alarm systems.",
-      extendedDescription: "With technical skills and attention to detail, they ensure all devices and systems function accurately and comply with safety standards. Their work is essential in supporting reliable fire safety solutions and protecting clients’ facilities.",
+      extendedDescription: "The Onsite Technician is responsible for installing, maintaining, and troubleshooting equipment, systems, or devices at the project location. The role ensures that all technical work is completed efficiently, safely, and in compliance with company and client standards.",
     },
     {
       id: 11,
       name: "Paul De Leon",
-      position: "FDAS Technician",
+      position: "Helper",
       image: "/images/team/hazel-marie-yadao.jpg",
-      description: "The FDAS Technician at RQUIN Integrated Solution Inc. is responsible for installing, testing, and maintaining fire detection and alarm systems.",
-      extendedDescription: "With technical skills and attention to detail, they ensure all devices and systems function accurately and comply with safety standards. Their work is essential in supporting reliable fire safety solutions and protecting clients’ facilities."
+      description: "Assist lead technicians/installers in onsite installation work (e.g., electrical, cabling, equipment, fixtures, or appliances).",
+      extendedDescription: "Carry and prepare materials, tools, and equipment required for the job. Support in setting up work areas and ensuring cleanliness and orderlines."
     },
     {
       id: 12,
@@ -115,7 +118,22 @@ export default function PeoplePage() {
       description: "The Admin Assistant at RQUIN Integrated Solution Inc. provides essential administrative and clerical support to ensure smooth daily operations.",
       extendedDescription: "They handle documentation, scheduling, and coordination tasks that keep projects and teams organized. With strong attention to detail and efficiency, the Admin Assistant plays a key role in supporting both management and staff."
     },
-   
+    {
+      id: 13,
+      name: "Ruel Magnaye ",
+      position: "Welder",
+      image: "/images/team/christian-morales.jpg",
+      description: "Perform welding and cutting tasks required for onsite installation of structures, equipment, or fittings.",
+      extendedDescription: "Assist in assembling and installing metal components according to project specifications. Read and interpret technical drawings, blueprints, and work instructions."
+    },
+    {
+      id: 14,
+      name: "Bryan De Leon",
+      position: "Helper",
+      image: "/images/team/christian-morales.jpg",
+      description: "Perform welding and cutting tasks required for onsite installation of structures, equipment, or fittings.",
+      extendedDescription: "Perform basic manual labor such as lifting, holding, or positioning materials.Ensure cleanliness and orderliness of the work area.Follow safety protocols and company policies at all times.Support the team in any other task assigned by the supervisor or foreman."
+    }
   ];
 
   return (
@@ -191,21 +209,21 @@ export default function PeoplePage() {
             {/* Employee Modal */}
       {isModalOpen && selectedEmployee && (
         <div 
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-2 sm:p-4"
           onClick={closeModal}
         >
           <div 
-            className="bg-gray-800/90 backdrop-blur-md rounded-lg max-w-4xl w-[90vw] border border-gray-600 shadow-2xl"
+            className="bg-gray-800/90 backdrop-blur-md rounded-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto border border-gray-600 shadow-2xl mx-4"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="p-8">
+            <div className="p-4 sm:p-6 lg:p-8">
               {/* Modal Header */}
-              <div className="mb-8">
-                <h2 className="text-3xl font-bold text-white drop-shadow-lg text-center">{selectedEmployee.name}</h2>
+              <div className="mb-4 sm:mb-6 lg:mb-8">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white drop-shadow-lg text-center leading-tight">{selectedEmployee.name}</h2>
               </div>
 
               {/* Employee Image */}
-              <div className="w-64 h-64 mx-auto mb-8 overflow-hidden bg-gray-700 rounded-lg border border-gray-600">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 mx-auto mb-4 sm:mb-6 lg:mb-8 overflow-hidden bg-gray-700 rounded-lg border border-gray-600">
                 <img 
                   src={selectedEmployee.image} 
                   alt={selectedEmployee.name}
@@ -215,20 +233,20 @@ export default function PeoplePage() {
                     e.target.nextSibling.style.display = 'flex';
                   }}
                 />
-                <div className="w-full h-full flex items-center justify-center text-gray-300 text-lg" style={{display: 'none'}}>
+                <div className="w-full h-full flex items-center justify-center text-gray-300 text-sm sm:text-base lg:text-lg" style={{display: 'none'}}>
                   Photo Coming Soon
                 </div>
               </div>
 
               {/* Employee Details */}
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-white mb-3 drop-shadow-lg">{selectedEmployee.position}</h3>
-                <div className="w-32 h-1 bg-cyan-400 mx-auto drop-shadow-lg"></div>
+              <div className="text-center mb-4 sm:mb-6 lg:mb-8">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white mb-2 sm:mb-3 drop-shadow-lg">{selectedEmployee.position}</h3>
+                <div className="w-24 sm:w-28 lg:w-32 h-1 bg-cyan-400 mx-auto drop-shadow-lg"></div>
               </div>
 
               {/* Extended Description */}
-              <div className="text-gray-200 leading-relaxed text-lg">
-                <p className="mb-6">{selectedEmployee.description}</p>
+              <div className="text-gray-200 leading-relaxed text-sm sm:text-base lg:text-lg">
+                <p className="mb-4 sm:mb-6">{selectedEmployee.description}</p>
                 <p>{selectedEmployee.extendedDescription}</p>
               </div>
             </div>
