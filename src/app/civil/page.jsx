@@ -27,7 +27,7 @@ export default function CivilWorks() {
   };
 
   const handleQuoteClick = () => {
-    router.push('/qoute');
+    router.push('/Qoutation');
   };
 
   const civilServices = [

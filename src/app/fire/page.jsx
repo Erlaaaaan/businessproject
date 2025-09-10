@@ -216,7 +216,7 @@ export default function FireAndSafety() {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Get a comprehensive fire safety assessment and quote for your building or facility.
           </p>
-          <Link href="/qoute" className="inline-block bg-[#0a810d] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#086a0a] transition-all duration-300 transform hover:scale-105 font-montserrat">
+          <Link href="/Quotation" className="inline-block bg-[#0a810d] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#086a0a] transition-all duration-300 transform hover:scale-105 font-montserrat">
             Get fire and Security Quote
           </Link>
         </div>
