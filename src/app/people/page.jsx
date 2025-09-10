@@ -62,6 +62,9 @@ export default function PeoplePage() {
     {
       id: 6,
       name: "Wilfredo Balaguer",
+      position: "Foreman - Fire Pro Department",
+      image: "/images/team/wolf.jpg",
+      description: "The Foreman of the Fire Protection Department at RQUIN Integrated Solution Inc. is responsible for supervising on-site installations, maintenance, and safety compliance of fire protection systems.",
       position: "Foreman",
       image: "/images/team/edleen-ona.jpg",
       description: "The Foreman is responsible for supervising and coordinating the daily activities of workers at the project site. He ensures that all tasks are carried out according to plans, safety regulations, and company standards, while meeting deadlines and maintaining quality workmanship.",

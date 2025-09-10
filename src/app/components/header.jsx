@@ -152,7 +152,7 @@ export default function Header() {
 
           {/* Get a Quote Button - Right Side */}
           <div className="hidden md:block">
-            <Link href="/qoute">
+            <Link href="/Quotation">
               <button className="bg-[#0a810d] hover:bg-[#086a0a] text-white font-bold py-3 px-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide">
                 Get a Quote
               </button>
@@ -255,7 +255,7 @@ export default function Header() {
                 </Link>
 
                 {/* Get a Quote Button for Mobile */}
-                <Link href="/qoute">
+                <Link href="/Qoutation">
                   <button 
                     className="w-full bg-[#0a810d] hover:bg-[#086a0a] text-white font-bold py-4 px-6 rounded-lg border-2 border-blue-300 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-montserrat uppercase tracking-wide text-lg"
                     onClick={() => setIsMenuOpen(false)}
