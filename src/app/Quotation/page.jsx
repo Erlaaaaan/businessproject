@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import { db } from "../../firebaseConfig/firebase";
 import { collection, addDoc } from "firebase/firestore";    
 import Partners from "../components/partners";
+import emailjs from '@emailjs/browser';
 
 export default function QuotePage() {
   const [formData, setFormData] = useState({
@@ -17,6 +18,11 @@ export default function QuotePage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  // EmailJS configuration - Replace these with your actual EmailJS variables
+  const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -43,6 +49,25 @@ export default function QuotePage() {
       
       console.log("Document written with ID: ", docRef.id);
       
+      // Send email using EmailJS
+      const emailParams = {
+        from_name: formData.companyName,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.additionalInfo,
+        to_email: 'kokobebebabryant@gmail.com', // Your business email
+        reply_to: formData.email
+      };
+
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        emailParams,
+        EMAILJS_PUBLIC_KEY
+      );
+      
+      console.log('Email sent successfully');
+      
       // Show success message
       setSubmitSuccess(true);
       
@@ -58,7 +83,7 @@ export default function QuotePage() {
       }, 3000);
       
     } catch (error) {
-      console.error("Error adding document: ", error);
+      console.error("Error submitting form: ", error);
       alert("There was an error submitting your request. Please try again.");
     } finally {
       setIsSubmitting(false);
